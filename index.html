@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing Strategy Guide</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section with Logo and Search -->
+      <header>
+        <div class="header-content">
+          <div class="logo">
+            <span>🚀</span>
+            <h1>Marketing Toolkit</h1>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search guides and resources..."
+              aria-label="Search marketing guides"
+            />
+            <button class="search-button"></button>
+          </div>
+        </div>
+
+        <nav>
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-icon">☰</span>
+            <span class="close-icon">✕</span>
+          </button>
+          <ul class="main-topics" id="mainTopics">
+            <li class="main-topic selected" data-subtopic="branding-subtopics">
+              <span>🎨</span> Branding
+            </li>
+            <li class="main-topic" data-subtopic="copywriting-subtopics">
+              <span>✍️</span> Copywriting
+            </li>
+            <li class="main-topic" data-subtopic="outreach-subtopics">
+              <span>📣</span> Customer Outreach
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Subtopics Section -->
+      <main class="subtopics-container" id="subtopicsContainer">
+        <!-- Branding Subtopics -->
+        <section
+          class="subtopic-card branding-subtopics"
+          data-title="7P's Marketing Mix"
+          tabindex="0"
+        >
+          <div class="card-info">
+            <h2>7P's Marketing Mix</h2>
+            <p>
+              A comprehensive framework to analyze and optimize your marketing
+              strategy.
+            </p>
+            <ul class="validation-list">
+              <li>
+                <strong>Product:</strong>
+                Define your product's unique value proposition and features.
+              </li>
+              <li>
+                <strong>Price:</strong>
+                Develop a strategic pricing model that reflects value.
+              </li>
+              <li>
+                <strong>Promotion:</strong>
+                Create targeted marketing and communication strategies.
+              </li>
+            </ul>
+            <button class="cta-button">Start Marketing Analysis</button>
+          </div>
+          <div class="card-visual">
+            <img
+              src="/api/placeholder/400/300"
+              alt="Marketing Mix Visualization"
+            />
+          </div>
+        </section>
+
+        <!-- Copywriting Subtopics -->
+        <section
+          class="subtopic-card copywriting-subtopics"
+          data-title="Audience and Branding"
+          tabindex="0"
+        >
+          <div class="card-info">
+            <h2>Audience and Branding</h2>
+            <p>
+              Craft compelling content that resonates with your target audience.
+            </p>
+            <ul class="validation-list">
+              <li>
+                <strong>Audience:</strong>
+                Develop deep understanding of target demographic.
+              </li>
+              <li>
+                <strong>Message:</strong>
+                Define a clear, consistent brand voice.
+              </li>
+              <li>
+                <strong>Engagement:</strong>
+                Design powerful calls-to-action.
+              </li>
+            </ul>
+            <button class="cta-button">Develop Content Strategy</button>
+          </div>
+          <div class="card-visual">
+            <img
+              src="/api/placeholder/400/300"
+              alt="Audience Targeting Visualization"
+            />
+          </div>
+        </section>
+
+        <!-- Customer Outreach Subtopics -->
+        <section
+          class="subtopic-card outreach-subtopics"
+          data-title="Corporate Video"
+          tabindex="0"
+        >
+          <div class="card-info">
+            <h2>Corporate Video Production</h2>
+            <p>Create professional videos that elevate your brand narrative.</p>
+            <ul class="validation-list">
+              <li>
+                <strong>Title:</strong>
+                Craft a compelling, concise video concept.
+              </li>
+              <li>
+                <strong>Script:</strong>
+                Develop a narrative that connects emotionally.
+              </li>
+              <li>
+                <strong>Audience:</strong>
+                Tailor content to specific viewer segments.
+              </li>
+            </ul>
+            <button class="cta-button">Plan Your Video</button>
+          </div>
+          <div class="card-visual">
+            <img
+              src="/api/placeholder/400/300"
+              alt="Corporate Video Strategy"
+            />
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>© 2024 Marketing Toolkit. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
