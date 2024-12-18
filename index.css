@@ -130,11 +130,6 @@ nav {
   color: var(--primary-color);
 }
 
-.main-topic:hover {
-  background-color: var(--secondary-color);
-  transform: translateY(-3px);
-}
-
 /* Subtopics Section */
 .subtopics-container {
   display: grid;
@@ -153,11 +148,6 @@ nav {
   transition: all var(--transition-speed);
 }
 
-.subtopic-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-}
-
 .card-info h2 {
   color: var(--primary-color);
   margin-bottom: 15px;
@@ -169,16 +159,24 @@ nav {
 }
 
 .validation-list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap; /* Allows content to wrap when screen size decreases */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .validation-list li::before {
   content: "✓";
   color: var(--primary-color);
   font-weight: bold;
+  flex-shrink: 0; /* Ensure tick icon doesn't shrink too much */
+}
+
+.validation-list li h3 {
+  margin: 0;
 }
 
 .cta-button {
@@ -251,5 +249,18 @@ footer {
   .card-visual img {
     max-width: 300px;
     margin: 0 auto;
+  }
+
+  .card-visual img {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .card-visual:hover img {
+    transform: scale(1.5);
+  }
+
+  .card-visual:not(:hover) img {
+    transform: scale(1);
   }
 }
