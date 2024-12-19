@@ -4,11 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
       section: "branding",
       component_id: 3,
       component_name: "7P's marketing mix",
+
       description:
         "The 7P's Marketing Mix empowers businesses to craft a holistic strategy by integrating Product, Price, Place, Promotion, People, Process, and Physical Evidence, ensuring optimal customer engagement and business growth.\n",
-      validation: `Any Reference Brands(Optional):sed for giving reference brands to AI for better results.
+      validations: {
+        tab: "7P's marketing mix",
+        validation: `Any Reference Brands(Optional):sed for giving reference brands to AI for better results.
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
-
+      },
       logo_url: "images/7ps.png",
     },
     1: {
