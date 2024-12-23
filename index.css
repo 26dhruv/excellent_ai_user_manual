@@ -19,6 +19,7 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   overflow-x: hidden;
+  font-size: 14px;
 }
 
 .container {
@@ -50,11 +51,11 @@ header {
 }
 
 .logo span {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .logo h1 {
-  font-size: 22px;
+  font-size: 16px;
   color: var(--primary-color);
 }
 
@@ -65,11 +66,12 @@ header {
 }
 
 .search-container input {
-  padding: 10px;
+  padding: 8px;
   width: 250px;
   border: 2px solid #e0e0e0;
   border-radius: 8px;
   transition: all var(--transition-speed);
+  font-size: 13px;
 }
 
 .search-container input:focus {
@@ -99,29 +101,29 @@ nav {
 
 .main-topics {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   list-style-type: none;
 }
 
 .main-topic {
-  display: flex; /* Keep items aligned as flex items */
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 10px 15px;
+  padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
   transition: all var(--transition-speed);
   border: 2px solid transparent;
-  flex: 1 1 150px; /* Allow items to grow and shrink but have a base width */
-  min-width: 150px; /* Set a minimum width for each item */
-  text-align: center; /* Center the text inside the button */
+  flex: 1 1 150px;
+  min-width: 150px;
+  text-align: center;
 }
 
 .main-topic span {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .main-topic.selected {
@@ -142,55 +144,48 @@ nav {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   background-color: var(--card-background);
-  border: 2px solid var(--secondary-color);
   border-radius: 12px;
-  padding: 30px;
+  padding: 25px;
   transition: all var(--transition-speed);
 }
 
 .card-info h2 {
+  font-size: 16px;
   color: var(--primary-color);
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .validation-list {
   list-style-type: none;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 .validation-list li {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  flex-wrap: wrap; /* Allows content to wrap when screen size decreases */
-  padding-bottom: 10px;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding-bottom: 6px;
   border-bottom: 1px solid #e0e0e0;
+  font-size: 12px;
 }
 
 .validation-list li::before {
   content: "✓";
   color: var(--primary-color);
   font-weight: bold;
-  flex-shrink: 0; /* Ensure tick icon doesn't shrink too much */
+  flex-shrink: 0;
+  font-size: 11px;
 }
 
 .validation-list li h3 {
   margin: 0;
+  font-size: 13px;
 }
 
-.cta-button {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all var(--transition-speed);
-}
-
-.cta-button:hover {
-  background-color: #8b1414;
+.main-topic:hover {
+  background-color: var(--secondary-color);
   transform: translateY(-2px);
 }
 
@@ -204,10 +199,62 @@ footer {
   text-align: center;
   padding: 20px;
   color: #666;
+  font-size: 12px;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--secondary-color);
+  border-radius: 12px;
+  background-color: var(--card-background);
+  overflow: hidden;
+  transition: all var(--transition-speed);
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.tab-button {
+  flex-grow: 1;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color var(--transition-speed);
+  font-size: 13px;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.tab-panels {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-panel {
+  display: none;
+  padding: 20px;
+}
+
+.tab-panel.active {
+  display: block;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
   .header-content {
     flex-direction: column;
     gap: 15px;
@@ -215,6 +262,7 @@ footer {
 
   .search-container input {
     width: 100%;
+    font-size: 16px;
   }
 
   .mobile-nav-toggle {
@@ -235,10 +283,15 @@ footer {
   .main-topics {
     display: none;
     flex-direction: column;
+    transition: background-color 0.3s ease, transform 0.2s ease;
   }
 
   .main-topics.show {
     display: flex;
+  }
+
+  .main-topic span {
+    font-size: 16px;
   }
 
   .subtopic-card {
@@ -262,5 +315,11 @@ footer {
 
   .card-visual:not(:hover) img {
     transform: scale(1);
+  }
+
+  .validation-list li,
+  .validation-list li h3,
+  .tab-button {
+    font-size: 16px;
   }
 }

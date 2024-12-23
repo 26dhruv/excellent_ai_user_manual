@@ -286,8 +286,7 @@ Specific Competitor Strategies to Emulate or Avoid (Optional): Mention any compe
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
         },
       ],
-      logo_url:
-        "https://ai-excellent-images.s3.us-east-1.amazonaws.com/Component_icons/customer_engagement_techniques.png",
+      logo_url: "images/customer_engagment_techniques.png",
     },
     13: {
       section: "perfomance_marketing",
@@ -453,8 +452,7 @@ Goals:What's your main goal with Google My Business? (e.g., increase visits, imp
 Tone (Optional): Specify the desired tone`,
         },
       ],
-      logo_url:
-        "https://ai-excellent-images.s3.us-east-1.amazonaws.com/Component_icons/google_business_optimizer.png",
+      logo_url: "images/google_business_optimiser.png",
     },
     20: {
       section: "google",
@@ -526,10 +524,385 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         {
           tab: "",
           detail: `Brand, Product or Service Name:Briefly describe product or service.
-                   Keywords(Optional):`,
+                   Keywords(Optional):Keyworkds for the porduct description.`,
         },
       ],
       logo_url: "images/google_service_product_description.png",
+    },
+    25: {
+      section: "customeroutreach",
+      component_id: 15,
+      component_name: "Growth hacking ideas",
+      description:
+        "The Growth Hacking Ideas tool offers creative, customized strategies that leverage trends and innovative marketing techniques to boost brand visibility, engagement, and conversions, fostering rapid and sustainable growth with cost-effective methods",
+      validations: [
+        {
+          tab: "",
+          detail: `Industry/Business Sector: Specify the industry or business sector to tailor strategies effectively.
+                   Specific Areas of Interest(Optional):Indicate particular areas you'd like to focus on for growth.
+                   Current Marketing Channel: Select the primary marketing channel currently in use.
+                   Target Audience(Optional):Define the audience to align strategies with their preferences.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/growth_hacking.png",
+    },
+    26: {
+      section: "essential",
+      component_id: 6,
+      component_name: "Image caption",
+      description:
+        "Image Captions are concise, engaging texts that enrich social media visuals, drive audience interaction, and amplify the reach and impact of your posts.",
+      validations: [
+        {
+          tab: "",
+          detail: `Image upload(Optional):Upload a image of your choice.`,
+        },
+      ],
+      logo_url: "images/image_caption.png",
+    },
+    27: {
+      section: "customeroutreach",
+      component_id: 16,
+      component_name: "Inexpensive direct sales ideas",
+      description:
+        "The Inexpensive Direct Sales Ideas tool provides budget-friendly strategies to boost sales efforts, enhance customer engagement, and maximize ROI with creative and impactful direct selling tactics",
+      validations: [
+        {
+          tab: "",
+          detail: `Product/Service: Focus of the sales of product/service stratergies.
+                   Sales Channel:Select primary sales method or platform.
+                   Budget and Resources(Optional): Available finances and tools.
+                   Specific Challenges in Direct Sales(Optional): Key obstacles faced.
+                   Target Audience(Optional): Intended customer demographic.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/inexpensive_direct_sales.png",
+    },
+    28: {
+      section: "customeroutreach",
+      component_id: 20,
+      component_name: "Innovative Ideas",
+      description:
+        "The Innovative Ideas tool generates creative, trend-setting concepts to enhance brand strategies, products, and services, helping businesses stay ahead with personalized solutions that engage and grow their audience.",
+      validations: [
+        {
+          tab: "",
+          detail: `Industry/Business Sector: Specify the business domain for tailored ideas.
+                   Target Audience(Optional):Define the audience to align ideas effectively.
+                   Current Challenges/Area of Improvement(Optional):Highlight issues to address or areas to improve.
+                   Specific Technologies/Trends: Indicate technologies or trends to leverage in solutions.
+                   Budget and Resources(Optional):Outline available resources to guide practical recommendations.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/innovative_idea.png",
+    },
+    29: {
+      section: "linkedin",
+      component_id: 27,
+      component_name: "Linkedin commenting tool",
+      description:
+        "The LinkedIn Commenting Tool boosts your professional presence by guiding you to craft impactful and relevant comments, fostering meaningful interactions and establishing you as a thought leader in your industry.",
+      validations: [
+        {
+          tab: "",
+          detail: `Post Content(Optional):Provide the content of the post you want to comment on for context.
+                   Tone(Optional):Specify the tone for your comment, such as professional, friendly, or insightful.`,
+        },
+      ],
+      logo_url: "images/linkedin_commenting_tool.png",
+    },
+    30: {
+      section: "linkedin",
+      component_id: 35,
+      component_name: "Linkedin posts",
+      description:
+        "LinkedIn Posts are strategically crafted to engage a professional network by showcasing expertise, sharing industry insights, and maintaining consistent brand presence, ultimately enhancing credibility and fostering meaningful professional relationships.",
+      validations: [
+        {
+          tab: "",
+          detail: `Industry: Specify the industry to tailor the post's context.
+                   Position: Define the professional role to align the content.
+                   Key Skills(Optional):Highlight skills to showcase in the post.
+                   Post Topic: Indicate the focus or subject of the post.
+                   Additional Information (Achievement Perspective)(Optional): Share notable accomplishments or perspectives to include.
+                   Tone(Optional):Specify the desired tone, such as formal, inspirational, or conversational.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/linkedin_posts.png",
+    },
+    31: {
+      section: "linkedin",
+      component_id: 37,
+      component_name: "LinkedIn skill assessment tool",
+      description:
+        "The LinkedIn Skill Assessment Tool is an intelligent AI-driven assistant designed to accurately solve varied MCQ questions, enabling users to validate their expertise and showcase skills effectively on their LinkedIn profiles.",
+      validations: [
+        {
+          tab: "",
+          detail: `Assessment Image: Upload the image of the LinkedIn skill assessment for processing.`,
+        },
+      ],
+      logo_url: "images/linkedin_skill_assessment.png",
+    },
+    32: {
+      section: "linkedin",
+      component_id: 26,
+      component_name: "LinkedIn's top voice helper",
+      description:
+        "LinkedIn Top Voice Helper boosts your influence by enhancing content and engagement strategies, offering personalized, data-driven insights to maximize your impact and reach as an industry leader.\n",
+      validations: [
+        {
+          tab: "",
+          detail: `Question: Provide the main question or topic to address.
+                   Subpoints(Optional):Include key details or aspects to cover in the content.
+                   Writing Style(Optional):Specify the desired style, such as persuasive, concise, or detailed.
+                   Tone(Optional):Indicate the tone, like professional, inspirational, or conversational.`,
+        },
+      ],
+      logo_url: "images/linkedin_topvoice.png",
+    },
+    33: {
+      section: "copywriting",
+      component_id: 19,
+      component_name: "Positioning Statement",
+      description:
+        "The Positioning Statement tool clarifies and communicates your brand's unique market position, aligning strengths with customer needs to ensure a compelling and memorable foundation for all marketing efforts",
+      validations: [
+        {
+          tab: "",
+          detail: `Category in which the Brand Operates: Specify the industry or market segment for the brand.
+                Target Audience(Optional):Define the customer demographic the brand aims to serve.
+                Benefit to the Customer(Optional):Highlight the key advantage or value the brand offers.
+                Reason Why the Brand Will Deliver on This Promise(Optional):Provide supporting evidence or rationale for the brand's reliability.
+                Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/positioning.png",
+    },
+    34: {
+      section: "essential",
+      component_id: 10,
+      component_name: "PPC helper",
+      description:
+        "PPC Helper boosts your digital advertising strategies with detailed analytics, automated bid management, and targeted campaigns, ensuring maximum ROI in the pay-per-click world.\n",
+      validations: [
+        {
+          tab: "",
+          detail: `Campaign Name: Specify the name of the PPC campaign.
+                   Product/Service: Define the product or service being promoted.
+                   Target Audience(Optional):Identify the audience to target for the campaign.
+                   Total Budget(Optional) :Mention the overall budget allocated for the campaign.
+                   Campaign Duration - Start Date(Optional):Provide the start date for the campaign.
+                   Campaign Duration - End Date(Optional):Provide the end date for the campaign.
+                   Tone(Optional) :Indicate the desired tone for the campaign's messaging.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/ppc_helper.png",
+    },
+    35: {
+      section: "customeroutreach",
+      component_id: 11,
+      component_name: "Quora answer",
+      description:
+        "Quora Answer optimizes your Quora engagement by analyzing top answers and suggesting improvements, helping you craft authoritative responses that boost visibility and establish thought leadership.",
+      validations: [
+        {
+          tab: ``,
+          detail: `Quora Question: Specify the question on which you are providing an answer.
+                   Key Points(Optional):Highlight important points to be included in the answer.
+                   Tone of Voice(Optional):Indicate the desired tone, such as informative, conversational, or persuasive.
+                   Additional Info(Optional):Provide any extra details or context to enhance the answer.`,
+        },
+      ],
+      logo_url: "images/quora_answer.png",
+    },
+    36: {
+      section: "copywriting",
+      component_id: 4,
+      component_name: "Sales punchline",
+      description:
+        "Sales Punchlines deliver catchy, memorable phrases that encapsulate product benefits and solve customer pain points, boosting interest, brand recall, and conversions.\n",
+      validations: [
+        {
+          tab: "",
+          detail: `Brand, Product or Service Name (Optional):Specify the name of the brand, product, or service.
+                   Key Message(Optional) :Highlight the primary message or benefit to focus on.
+                   Language: Specify the desired language for the punchline.
+                   Tone(Optional):Indicate the tone, such as persuasive, playful, or professional.`,
+        },
+      ],
+      logo_url: "images/sales_punchline.png",
+    },
+    37: {
+      section: "socialmedia",
+      component_id: 1,
+      component_name: "Social media posts",
+      description:
+        "Social Media Posts empower brands with strategic Instagram content, including captivating visuals, reels, and stories, to enhance visibility, foster engagement, and align with marketing goals through consistent planning and creative execution.\n",
+      validations: [
+        {
+          tab: "Monthly Insta Reels",
+          detail: `Post Theme: Specify the overarching theme or concept for the social media post.
+                  Brand Information(Optional):Include details about the brand for consistency.
+                  Target Audience (Optional):Identify the intended audience for the posts.
+                  Key Products: Highlight the primary products featured in the posts.
+                  Content Goals: Outline the specific goals of the content (e.g., engagement, conversions).
+                  Additional Information: (Optional) Provide extra details for tailoring the posts.
+                  Number of Posts: Specify the number of posts/reels/stories needed.
+                  Timeline - Start Date(Optional):Indicate when the content creation begins.
+                  Timeline - End Date(Optional):Indicate when the content creation ends.
+                  Tone (Optional):Define the tone, such as playful, professional, or inspiring.
+                  Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+        {
+          tab: "Monthly Insta story",
+          detail: `Post Theme: Specify the overarching theme or concept for the Instagram Story.
+                   Brand Information(Optional) : Include details about the brand for consistency.
+                   Target Audience(Optional):  Identify the intended audience for the Stories.
+                   Key Products: Highlight the primary products featured in the Stories.
+                   Content Goals: Outline the specific goals of the Stories (e.g., engagement, brand awareness).
+                   Additional Information (Optional):Provide extra details for tailoring the Stories.
+                   Number of Posts: Specify the number of Stories to be created.
+                   Timeline - Start Date(Optional):Indicate when the Stories creation begins.
+                   Timeline - End Date(Optional):Indicate when the Stories creation ends.
+                   Tone(Optional):Define the tone, such as playful, professional, or engaging.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+        {
+          tab: "Instagram reel  ",
+          detail: `Post Theme: Specify the theme or concept for the Instagram Reel.
+                   Brand Information: (Optional) Include details about the brand for consistency.
+                   Target Audience: (Optional) Identify the audience for the Reel.
+                   Key Products: Highlight the main products featured in the Reel.
+                   Content Goals: Define the objectives of the Reel, such as increasing engagement or promoting products.
+                   Additional Information: (Optional) Provide extra context or details for customization.
+                   Tone: (Optional) Specify the desired tone, such as fun, educational, or professional.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+        {
+          tab: "Instagram Post",
+          detail: `Post Theme: Specify the theme or concept for the Instagram Post.
+                   Brand Information(Optional) : Include details about the brand for consistency.
+                   Target Audience(Optional) :Identify the audience for the Post.
+                   Key Products: Highlight the main products featured in the Post.
+                   Content Goals: Define the objectives of the Post, such as engagement, awareness, or conversions.
+                   Additional Information(Optional) : Provide extra context or details for customization.
+                   Tone(Optional):Specify the desired tone, such as professional, casual, or engaging.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+        {
+          tab: "Monthly insta post",
+          detail: `Post Theme: Specify the theme or concept for the monthly Instagram Post.
+                  Brand Information(Optional):Include details about the brand for consistency.
+                  Target Audience(Optional):Identify the audience for the Posts.
+                  Key Products: Highlight the main products featured in the Posts.
+                  Content Goals: Define the objectives of the Posts, such as engagement, awareness, or conversions.
+                  Number of Posts: Specify how many posts are required.
+                  Additional Information(Optional):Provide extra context or details for customization.
+                  Timeline - Start Date(Optional):Indicate when the content creation begins.
+                  Timeline - End Date(Optional):Indicate when the content creation ends.
+                  Tone(Optional):Specify the desired tone, such as professional, casual, or engaging.
+                  Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/social_media_posts.png",
+    },
+    38: {
+      section: "essential",
+      component_id: 7,
+      component_name: "Stock image generation",
+      description:
+        "The Stock Image Generator leverages AI to craft unique, high-quality images from specific prompts, transforming content creation with instant, personalized visuals for any purpose.",
+      validations: [
+        {
+          tab: "Prompt Generator",
+          detail: `Image Import: (Optional) Upload or import images to generate enhanced visuals.`,
+        },
+        {
+          tab: "Stock Images",
+          detail: `Event or Occasion: Specify the event or occasion for which the image is needed.
+                  Subject Matter: Define the main focus or theme of the image.
+                  Perspective/Angle: (Optional) Indicate the desired viewpoint or perspective.
+                  Color Scheme: (Optional) Specify the color palette for the image.
+                  Environment: (Optional) Describe the setting or background for the image.
+                  Mood/Tone: (Optional) Specify the mood or emotional tone of the image.
+                  Additional Details: (Optional) Provide extra context or elements for customization.`,
+        },
+      ],
+      logo_url: "images/stock_image.png",
+    },
+    39: {
+      color: "copywriting",
+      component_id: 24,
+      component_name: "Swot analysis",
+      description:
+        "The SWOT Analysis tool provides a clear framework for identifying and evaluating strengths, weaknesses, opportunities, and threats, empowering businesses to make informed decisions and strategic plans with confidence.",
+      validations: [
+        {
+          tab: "",
+          detail: `Competitors Website Link: (Optional) Provide a link to competitors' websites for reference in SWOT analysis.`,
+        },
+      ],
+      logo_url: "images/swot_analysis.png",
+    },
+    40: {
+      color: "socialmedia",
+      component_id: 9,
+      component_name: "Viral content strategy",
+      description:
+        "Viral Content Strategy is an innovative tool that crafts powerful Instagram content calendars using data-driven insights, tailored to boost engagement and maximize online presence for brands and influencers.\n",
+      validations: [
+        {
+          tab: "",
+          detail: `Brand & Business Info(Optional):Include details about the brand for context.
+                   Social Proof & Expertise(Optional):Highlight any social proof or expert insights.
+                   Content Goals: Define the specific objectives of the content, such as engagement, conversions, or brand awareness.
+                   Content Creation Capacity(Optional):Specify the capacity for content creation, like number of posts or time.
+                   Tone(Optional):Indicate the desired tone, such as playful, professional, or educational.
+                   Target Audience(Optional):Define the audience to ensure tailored content strategy.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/viral_content_strat.png",
+    },
+    41: {
+      color: "copywriting",
+      component_id: 5,
+      component_name: "Website content writer",
+      description:
+        "A Website Content Writer crafts engaging and SEO-friendly digital content that enhances online presence, conveys brand messages, and boosts search rankings to drive visitor action and website success.\n",
+      validations: [
+        {
+          tab: "",
+          detail: `Page for Which Content is to be Written: Specify the specific webpage or section for which content is needed.
+                   Tone(Optional):Indicate the desired tone, such as formal, conversational, or persuasive.
+                   Brief for the Page(Optional):Provide a brief description or key points for the page content.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+        },
+      ],
+      logo_url: "images/website_content_writer.png",
+    },
+    42: {
+      color: "copywriting",
+      component_id: 29,
+      component_name: "Write like me",
+      description:
+        " Write Like Me is an innovative tool that replicates your unique writing style, ensuring content remains true to your personal or brand voice while maintaining consistency across all written materials.",
+      validations: [
+        {
+          tab: "",
+          detail: `Writing Sample or Style Preference: Provide a sample of your writing style or specify your preferred writing style.
+                   Desired Length(Optional):Indicate the preferred length of the content.
+                   Specific Instructions(Optional):Include any specific instructions or guidelines for the content.
+                   Tone(Optional):Specify the desired tone, such as professional, casual, or detailed.`,
+        },
+      ],
+      logo_url: "images/write_like_me.png",
     },
   };
 
