@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "The 7P's Marketing Mix empowers businesses to craft a holistic strategy by integrating Product, Price, Place, Promotion, People, Process, and Physical Evidence, ensuring optimal customer engagement and business growth.\n",
       validations: [
         {
-          tab: "",
+          tab: "7P's marketing mix",
           detail:
             "Any Reference Brands(Optional):sed for giving reference brands to AI for better results.\nInclude Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!",
         },
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Abandoned Cart is a strategic tool that re-engages online shoppers through reminder emails and discounts, boosting conversion rates by encouraging them to return and complete their purchase for enhanced customer experience and sales growth.",
       validations: [
         {
-          tab: "",
+          tab: "Abandoned Cart",
           detail: `Cart Image:used for giving reference about Cart to AI 
 Tone(Optional):Defines Tone of the output AI generates
 Target Audience(Optional):Helps AI define the Target Audience /People for better understanding.
@@ -87,7 +87,7 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
         "This comprehensive branding toolkit refines your marketing strategy by identifying your audience, establishing a unique tone of voice, and selecting cohesive color palettes and font options, ensuring effective brand communication and stronger market connection.\n",
       validations: [
         {
-          tab: "",
+          tab: "Audience, tone of voice, personality, colour palettes & font options",
           detail: `Brand Brief (Optional): User can summarize the brand, including its mission, values, and key messaging.`,
         },
       ],
@@ -101,12 +101,12 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
         "The Blog Writer crafts engaging and informative content, blending expertise and SEO strategies to drive traffic and enhance online presence, ultimately boosting a brand's content marketing success.",
       validations: [
         {
-          tab: "",
+          tab: "Blog writer",
           detail: `Blog Topic*: User can specify the main topic or theme of the blog.
-Main Keyword (Optional): User can enter a primary keyword for SEO optimization.
-List of Keywords (Optional): User can provide additional SEO keywords for inclusion.
-Keyword Density of Main Keyword (Percentage) (Optional): User can set the desired percentage for the keyword density.
-Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+                   Main Keyword (Optional): User can enter a primary keyword for SEO optimization.
+                   List of Keywords (Optional): User can provide additional SEO keywords for inclusion.
+                   Keyword Density of Main Keyword (Percentage) (Optional): User can set the desired percentage for the keyword density.
+                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
         },
       ],
       logo_url: "images/blog_writer.png",
@@ -119,11 +119,11 @@ Include Competitors Data:Use it for better AI response,you can add upto 3 compet
         "The Brochure is a versatile marketing tool that combines engaging visuals and concise text to promote products, services, or events, effectively communicating brand value through both print and digital formats.",
       validations: [
         {
-          tab: "",
+          tab: "Brochure",
           detail: `Purpose of the Brochure*: State intended use or purpose.
-Page Count (Optional): Specify the desired number of pages for the brochure.
-Preliminary Content Structure (Optional): Outline brochure sections.
-Distribution Channel (Optional): Specify where and how the brochure will be distributed (e.g., online, printed, at events).`,
+                   Page Count (Optional): Specify the desired number of pages for the brochure.
+                   Preliminary Content Structure (Optional): Outline brochure sections.
+                   Distribution Channel (Optional): Specify where and how the brochure will be distributed (e.g., online, printed, at events).`,
         },
       ],
       logo_url: "images/brochure.png",
@@ -136,7 +136,7 @@ Distribution Channel (Optional): Specify where and how the brochure will be dist
         "Buyer's Journey Touchpoints is a powerful tool that maps and analyzes customer interactions throughout the purchase process, providing insights to optimize marketing strategies, enhance customer experiences, and drive business growth.",
       validations: [
         {
-          tab: "",
+          tab: "Buyers journey touchpoint",
           detail: `Product/Service Information*: Key features and benefits, Unique selling proposition, Price point and positioning.
 Target Audience (Optional): Who is your audience? e.g., demographics, preferences, and pain points of the target customers.
 Marketing Channels (Optional): Select from given options (e.g., social media, email, content marketing).
@@ -252,7 +252,7 @@ Brand Name to Replace with (Optional): If applicable, enter a brand name to repl
         "The Corporate Video Generator transforms business storytelling with AI-driven templates and customizable features, making it effortless to create professional-quality videos for impactful presentations, marketing, and internal communications.\n",
       validations: [
         {
-          tab: "",
+          tab: "Corporate video Generator",
           detail: `Title/Topic: Enter the title or topic of the video.
 Language (Optional): Enter the preferred language for the video content.
 Video Duration (In seconds) (Optional): Specify the desired duration of the video in seconds.
@@ -270,7 +270,7 @@ Include Competitors Data:Use it for better AI response,you can add upto 3 compet
         "The Customer Engagement Techniques tool offers innovative strategies to enhance interaction and satisfaction, fostering meaningful connections and loyalty through personalized communication and engaging content.",
       validations: [
         {
-          tab: "",
+          tab: "Customer engagement Techniques",
           detail: `Business Name & Type: Enter the name and type of business to tailor engagement strategies accordingly.
 Target Audience (Optional): Enter details about the target audience, such as demographics, interests, and behavior.
 Current Engagement Methods: Describe the current methods used to engage with customers.
@@ -296,7 +296,7 @@ Include Competitors Data:Use it for better AI response,you can add upto 3 compet
         "E-Commerce Product Descriptions craft compelling, SEO-optimized write-ups that highlight product features, benefits, and unique selling points to drive online sales and enhance customer experience.",
       validations: [
         {
-          tab: "",
+          tab: "E-commerce product description",
           detail: `Product Name: Enter the name of the product.
 Product Overview/Description: Provide a brief overview or description of the product.
 Product Features/Specifications: List the key features and specifications of the product.
@@ -319,7 +319,7 @@ Include Competitors Data:Use it for better AI response,you can add upto 3 compet
         "Elevator Pitch is your go-to tool for crafting concise, impactful statements that capture your brand's essence and unique value proposition, ensuring your ideas stand out in any room.\n",
       validations: [
         {
-          tab: "",
+          tab: "Elevator Pitch",
           detail: `Brand Name: Enter the name of your brand.
 Industry (Optional): Specify the industry your brand operates in.
 Brand Voice (Optional): Describe the tone and style of communication used by your brand (e.g., professional, innovative, friendly).
@@ -338,7 +338,7 @@ Target Audience (Optional): Specify the target audience, including demographics,
         "The Festival Post Generator is a cutting-edge tool that effortlessly crafts engaging, culturally apt social media posts for festivals, complete with themed visuals and text, ensuring a vibrant online presence for every celebration.\n",
       validations: [
         {
-          tab: "",
+          tab: "Festival post generator",
           detail: `Festival Name: Enter the name of the festival for which the post is being generated.`,
         },
       ],
@@ -352,7 +352,7 @@ Target Audience (Optional): Specify the target audience, including demographics,
         "The Fifty Business Update Generator crafts an extensive list of fifty update topics based relevant keywords to elevate SEO and content marketing strategies, enhancing online visibility and search engine rankings by diversifying and targeting audience search queries.\n",
       validations: [
         {
-          tab: "",
+          tab: "Fifty business update generator",
           detail: `Keywords: Enter relevant business update keywords.
 	  Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
         },
@@ -367,7 +367,7 @@ Target Audience (Optional): Specify the target audience, including demographics,
         "Framework-based Copywriting uses structured templates and psychological insights to craft compelling marketing messages, ensuring consistency and effectiveness in driving action, conversions, and brand loyalty.",
       validations: [
         {
-          tab: "",
+          tab: "Framework based copywriting",
           detail: `Type of Copy: Enter the type of copy you need (e.g., landing page, ad copy, email marketing).
 Select Framework: Select the appropriate framework (e.g., AIDA, PAS, 4Ps).
 Specific Product or Service: Enter the product or service for which the copy is being created.
@@ -439,7 +439,7 @@ Include Competitors Data:Use it for better AI response,you can add upto 3 compet
         "Google Business Optimizer boosts your business's online presence by enhancing Google My Business listings, optimizing information, improving photo and post quality, and amplifying local search visibility to attract more customers and elevate engagement.\n",
       validations: [
         {
-          tab: "",
+          tab: "Google business optimiser",
           detail: `Business Name:Enter name of your business.
 Business Category: Enter primary business category.
 Business Location (Optional): Enter area/city of service.
@@ -462,9 +462,9 @@ Tone (Optional): Specify the desired tone`,
         "The Google FAQs and Answer Writer tool empowers businesses to craft clear, comprehensive FAQ sections that enhance user understanding and satisfaction, reducing support queries and streamlining customer service operations.",
       validations: [
         {
-          tab: "",
+          tab: "Google FAQs and answer writer",
           detail: `Idea of Product or Service:Briefly describe the product or service concept.
-Number of FAQ(Optional):Number of FAQ's to be generated.`,
+                   Number of FAQ(Optional):Number of FAQ's to be generated.`,
         },
       ],
       logo_url: "images/google_faq.png",
@@ -477,7 +477,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The Google Review Response Writer crafts personalized and brand-aligned responses to customer reviews, enhancing reputation and showcasing commitment to customer service excellence.",
       validations: [
         {
-          tab: "",
+          tab: "Google review response writer",
           detail: `Google Review:Paste the cutomer review to respond to.`,
         },
       ],
@@ -491,7 +491,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "Google Review Writing crafts detailed reviews that enhance brand reputation, provide valuable feedback, and influence customer perceptions, building trust and credibility online.\n",
       validations: [
         {
-          tab: "",
+          tab: "Google review writing",
           detail: `List of Target Audiences:Specify demographics or groups targeted.`,
         },
       ],
@@ -505,7 +505,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The Google Search Keyword Generator uncovers essential keywords and phrases to boost website content and ad optimization, enhancing SEO and PPC strategies to attract targeted traffic and amplify online marketing success.\n",
       validations: [
         {
-          tab: "",
+          tab: "Google search keyword generator",
           detail: `Business Location Name:Enter business location.
                         Business Category:Enter business category.
                         Business City Name:Enter Business city name.
@@ -522,7 +522,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The Google Service Product Description crafts detailed, SEO-optimized descriptions that enhance search visibility, effectively attracting targeted traffic by highlighting service features and benefits.",
       validations: [
         {
-          tab: "",
+          tab: "Google service product description",
           detail: `Brand, Product or Service Name:Briefly describe product or service.
                    Keywords(Optional):Keyworkds for the porduct description.`,
         },
@@ -537,7 +537,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The Growth Hacking Ideas tool offers creative, customized strategies that leverage trends and innovative marketing techniques to boost brand visibility, engagement, and conversions, fostering rapid and sustainable growth with cost-effective methods",
       validations: [
         {
-          tab: "",
+          tab: "Growth hacking ideas",
           detail: `Industry/Business Sector: Specify the industry or business sector to tailor strategies effectively.
                    Specific Areas of Interest(Optional):Indicate particular areas you'd like to focus on for growth.
                    Current Marketing Channel: Select the primary marketing channel currently in use.
@@ -555,7 +555,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "Image Captions are concise, engaging texts that enrich social media visuals, drive audience interaction, and amplify the reach and impact of your posts.",
       validations: [
         {
-          tab: "",
+          tab: "Image caption",
           detail: `Image upload(Optional):Upload a image of your choice.`,
         },
       ],
@@ -569,7 +569,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The Inexpensive Direct Sales Ideas tool provides budget-friendly strategies to boost sales efforts, enhance customer engagement, and maximize ROI with creative and impactful direct selling tactics",
       validations: [
         {
-          tab: "",
+          tab: "Inexpensive direct sales ideas",
           detail: `Product/Service: Focus of the sales of product/service stratergies.
                    Sales Channel:Select primary sales method or platform.
                    Budget and Resources(Optional): Available finances and tools.
@@ -588,7 +588,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The Innovative Ideas tool generates creative, trend-setting concepts to enhance brand strategies, products, and services, helping businesses stay ahead with personalized solutions that engage and grow their audience.",
       validations: [
         {
-          tab: "",
+          tab: "Innovative Ideas",
           detail: `Industry/Business Sector: Specify the business domain for tailored ideas.
                    Target Audience(Optional):Define the audience to align ideas effectively.
                    Current Challenges/Area of Improvement(Optional):Highlight issues to address or areas to improve.
@@ -607,7 +607,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The LinkedIn Commenting Tool boosts your professional presence by guiding you to craft impactful and relevant comments, fostering meaningful interactions and establishing you as a thought leader in your industry.",
       validations: [
         {
-          tab: "",
+          tab: "Linkedin commenting tool",
           detail: `Post Content(Optional):Provide the content of the post you want to comment on for context.
                    Tone(Optional):Specify the tone for your comment, such as professional, friendly, or insightful.`,
         },
@@ -622,7 +622,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "LinkedIn Posts are strategically crafted to engage a professional network by showcasing expertise, sharing industry insights, and maintaining consistent brand presence, ultimately enhancing credibility and fostering meaningful professional relationships.",
       validations: [
         {
-          tab: "",
+          tab: "Linkedin posts",
           detail: `Industry: Specify the industry to tailor the post's context.
                    Position: Define the professional role to align the content.
                    Key Skills(Optional):Highlight skills to showcase in the post.
@@ -642,7 +642,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The LinkedIn Skill Assessment Tool is an intelligent AI-driven assistant designed to accurately solve varied MCQ questions, enabling users to validate their expertise and showcase skills effectively on their LinkedIn profiles.",
       validations: [
         {
-          tab: "",
+          tab: "LinkedIn skill assessment tool",
           detail: `Assessment Image: Upload the image of the LinkedIn skill assessment for processing.`,
         },
       ],
@@ -656,7 +656,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "LinkedIn Top Voice Helper boosts your influence by enhancing content and engagement strategies, offering personalized, data-driven insights to maximize your impact and reach as an industry leader.\n",
       validations: [
         {
-          tab: "",
+          tab: "LinkedIn's top voice helper",
           detail: `Question: Provide the main question or topic to address.
                    Subpoints(Optional):Include key details or aspects to cover in the content.
                    Writing Style(Optional):Specify the desired style, such as persuasive, concise, or detailed.
@@ -673,7 +673,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The Positioning Statement tool clarifies and communicates your brand's unique market position, aligning strengths with customer needs to ensure a compelling and memorable foundation for all marketing efforts",
       validations: [
         {
-          tab: "",
+          tab: "Positioning Statement",
           detail: `Category in which the Brand Operates: Specify the industry or market segment for the brand.
                 Target Audience(Optional):Define the customer demographic the brand aims to serve.
                 Benefit to the Customer(Optional):Highlight the key advantage or value the brand offers.
@@ -691,7 +691,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "PPC Helper boosts your digital advertising strategies with detailed analytics, automated bid management, and targeted campaigns, ensuring maximum ROI in the pay-per-click world.\n",
       validations: [
         {
-          tab: "",
+          tab: "PPC helper",
           detail: `Campaign Name: Specify the name of the PPC campaign.
                    Product/Service: Define the product or service being promoted.
                    Target Audience(Optional):Identify the audience to target for the campaign.
@@ -712,7 +712,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "Quora Answer optimizes your Quora engagement by analyzing top answers and suggesting improvements, helping you craft authoritative responses that boost visibility and establish thought leadership.",
       validations: [
         {
-          tab: ``,
+          tab: `Quora answer`,
           detail: `Quora Question: Specify the question on which you are providing an answer.
                    Key Points(Optional):Highlight important points to be included in the answer.
                    Tone of Voice(Optional):Indicate the desired tone, such as informative, conversational, or persuasive.
@@ -729,7 +729,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "Sales Punchlines deliver catchy, memorable phrases that encapsulate product benefits and solve customer pain points, boosting interest, brand recall, and conversions.\n",
       validations: [
         {
-          tab: "",
+          tab: "Sales punchline",
           detail: `Brand, Product or Service Name (Optional):Specify the name of the brand, product, or service.
                    Key Message(Optional) :Highlight the primary message or benefit to focus on.
                    Language: Specify the desired language for the punchline.
@@ -774,7 +774,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
         },
         {
-          tab: "Instagram reel  ",
+          tab: "Instagram reel",
           detail: `Post Theme: Specify the theme or concept for the Instagram Reel.
                    Brand Information: (Optional) Include details about the brand for consistency.
                    Target Audience: (Optional) Identify the audience for the Reel.
@@ -844,7 +844,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "The SWOT Analysis tool provides a clear framework for identifying and evaluating strengths, weaknesses, opportunities, and threats, empowering businesses to make informed decisions and strategic plans with confidence.",
       validations: [
         {
-          tab: "",
+          tab: "Swot analysis",
           detail: `Competitors Website Link: (Optional) Provide a link to competitors' websites for reference in SWOT analysis.`,
         },
       ],
@@ -858,7 +858,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "Viral Content Strategy is an innovative tool that crafts powerful Instagram content calendars using data-driven insights, tailored to boost engagement and maximize online presence for brands and influencers.\n",
       validations: [
         {
-          tab: "",
+          tab: "Viral content strategy",
           detail: `Brand & Business Info(Optional):Include details about the brand for context.
                    Social Proof & Expertise(Optional):Highlight any social proof or expert insights.
                    Content Goals: Define the specific objectives of the content, such as engagement, conversions, or brand awareness.
@@ -878,7 +878,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         "A Website Content Writer crafts engaging and SEO-friendly digital content that enhances online presence, conveys brand messages, and boosts search rankings to drive visitor action and website success.\n",
       validations: [
         {
-          tab: "",
+          tab: "Website content writer",
           detail: `Page for Which Content is to be Written: Specify the specific webpage or section for which content is needed.
                    Tone(Optional):Indicate the desired tone, such as formal, conversational, or persuasive.
                    Brief for the Page(Optional):Provide a brief description or key points for the page content.
@@ -895,7 +895,7 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
         " Write Like Me is an innovative tool that replicates your unique writing style, ensuring content remains true to your personal or brand voice while maintaining consistency across all written materials.",
       validations: [
         {
-          tab: "",
+          tab: "Write like me",
           detail: `Writing Sample or Style Preference: Provide a sample of your writing style or specify your preferred writing style.
                    Desired Length(Optional):Indicate the preferred length of the content.
                    Specific Instructions(Optional):Include any specific instructions or guidelines for the content.
@@ -909,15 +909,198 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
   const subtopicsContainer = document.getElementById("subtopicsContainer");
   const searchInput = document.getElementById("searchInput");
 
+  function initializeImageZoomDrag(imgElement) {
+    let scale = 1;
+    const MAX_SCALE = 3;
+    const MIN_SCALE = 1;
+    const ZOOM_SPEED = 0.02;
+    let lastWheelTime = 0;
+    const WHEEL_TIMEOUT = 50;
+
+    let isDragging = false;
+    let startX,
+      startY,
+      translateX = 0,
+      translateY = 0;
+    let lastX = 0,
+      lastY = 0;
+    let velocityX = 0,
+      velocityY = 0;
+
+    // Initialize image with optimized properties
+    imgElement.style.backfaceVisibility = "hidden";
+    imgElement.style.webkitBackfaceVisibility = "hidden";
+    imgElement.style.willChange = "transform";
+    imgElement.style.transformStyle = "preserve-3d";
+    imgElement.parentElement.style.perspective = "1000px";
+
+    // Throttled wheel event for zoom
+    imgElement.addEventListener(
+      "wheel",
+      (e) => {
+        e.preventDefault();
+
+        const isTouchPad = Math.abs(e.wheelDelta) < 120;
+        const currentTime = Date.now();
+
+        if (currentTime - lastWheelTime < WHEEL_TIMEOUT && !e.ctrlKey) return;
+        lastWheelTime = currentTime;
+
+        let zoomFactor = ZOOM_SPEED;
+        if (e.ctrlKey || isTouchPad) {
+          zoomFactor = ZOOM_SPEED * 0.5;
+        }
+
+        const delta = e.deltaY > 0 ? -1 : 1;
+        let newScale = scale + delta * zoomFactor;
+
+        newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
+
+        if (newScale !== scale) {
+          scale = newScale;
+
+          const rect = imgElement.getBoundingClientRect();
+          const mouseX = e.clientX - rect.left;
+          const mouseY = e.clientY - rect.top;
+
+          const x = (mouseX - translateX) * (1 - scale);
+          const y = (mouseY - translateY) * (1 - scale);
+
+          requestAnimationFrame(() => {
+            const boundedTranslateX = translateX + x;
+            const boundedTranslateY = translateY + y;
+
+            const maxTranslateX = (rect.width * (scale - 1)) / 2;
+            const maxTranslateY = (rect.height * (scale - 1)) / 2;
+
+            translateX = Math.min(
+              Math.max(boundedTranslateX, -maxTranslateX),
+              maxTranslateX
+            );
+            translateY = Math.min(
+              Math.max(boundedTranslateY, -maxTranslateY),
+              maxTranslateY
+            );
+
+            updateImageTransform(imgElement, scale, translateX, translateY);
+          });
+        }
+      },
+      { passive: false }
+    );
+
+    // Mouse down event for drag start
+    imgElement.addEventListener("mousedown", (e) => {
+      if (scale > 1) {
+        isDragging = true;
+        imgElement.parentElement.classList.add("dragging");
+        startX = e.clientX - translateX;
+        startY = e.clientY - translateY;
+        lastX = e.clientX;
+        lastY = e.clientY;
+        velocityX = 0;
+        velocityY = 0;
+      }
+    });
+
+    // Mouse move event for dragging
+    document.addEventListener("mousemove", (e) => {
+      if (!isDragging) return;
+
+      velocityX = e.clientX - lastX;
+      velocityY = e.clientY - lastY;
+      lastX = e.clientX;
+      lastY = e.clientY;
+
+      let newTranslateX = e.clientX - startX;
+      let newTranslateY = e.clientY - startY;
+
+      const rect = imgElement.getBoundingClientRect();
+      const containerRect = imgElement.parentElement.getBoundingClientRect();
+
+      const maxX = (rect.width * scale - containerRect.width) / 2;
+      const maxY = (rect.height * scale - containerRect.height) / 2;
+
+      newTranslateX = Math.min(Math.max(newTranslateX, -maxX), maxX);
+      newTranslateY = Math.min(Math.max(newTranslateY, -maxY), maxY);
+
+      translateX = newTranslateX;
+      translateY = newTranslateY;
+
+      requestAnimationFrame(() => {
+        updateImageTransform(imgElement, scale, translateX, translateY);
+      });
+    });
+
+    // Mouse up event for drag end
+    document.addEventListener("mouseup", () => {
+      if (isDragging) {
+        isDragging = false;
+        imgElement.parentElement.classList.remove("dragging");
+
+        // Apply momentum
+        let momentum = () => {
+          if (Math.abs(velocityX) > 0.1 || Math.abs(velocityY) > 0.1) {
+            velocityX *= 0.95;
+            velocityY *= 0.95;
+
+            translateX += velocityX;
+            translateY += velocityY;
+
+            const rect = imgElement.getBoundingClientRect();
+            const containerRect =
+              imgElement.parentElement.getBoundingClientRect();
+
+            const maxX = (rect.width * scale - containerRect.width) / 2;
+            const maxY = (rect.height * scale - containerRect.height) / 2;
+
+            translateX = Math.min(Math.max(translateX, -maxX), maxX);
+            translateY = Math.min(Math.max(translateY, -maxY), maxY);
+
+            requestAnimationFrame(() => {
+              updateImageTransform(imgElement, scale, translateX, translateY);
+              momentum();
+            });
+          }
+        };
+        momentum();
+      }
+    });
+
+    // Mouse out event for reset
+    imgElement.parentElement.addEventListener("mouseout", (e) => {
+      // Only reset if the mouse leaves the container entirely
+      if (
+        !e.relatedTarget ||
+        !imgElement.parentElement.contains(e.relatedTarget)
+      ) {
+        resetImageTransform(imgElement);
+      }
+    });
+  }
+
+  function updateImageTransform(imgElement, scale, translateX, translateY) {
+    imgElement.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) scale3d(${scale}, ${scale}, 1)`;
+  }
+
+  function resetImageTransform(imgElement) {
+    scale = 1;
+    translateX = 0;
+    translateY = 0;
+    requestAnimationFrame(() => {
+      imgElement.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) scale3d(${scale}, ${scale}, 1)`;
+    });
+  }
+
   function parseValidationDetails(detail) {
     return detail
       .split("\n")
       .map((line) => {
         const [boldText, ...regularText] = line.split(":");
         return `<li>
-          <strong>${boldText.trim()}:</strong> 
-          ${regularText.join(":").trim()}
-        </li>`;
+        <strong>${boldText.trim()}:</strong> 
+        ${regularText.join(":").trim()}
+      </li>`;
       })
       .join("");
   }
@@ -926,47 +1109,47 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
     const tabButtons = validations
       .map(
         (validation) => `
-        <button 
-          class="tab-button"
-          data-tab="${validation.tab}"
-          aria-selected="false"
-          aria-controls="${componentId}-panel-${validation.tab}"
-          role="tab"
-        >
-          ${validation.tab}
-        </button>
-      `
+      <button 
+        class="tab-button"
+        data-tab="${validation.tab}"
+        aria-selected="false"
+        aria-controls="${componentId}-panel-${validation.tab}"
+        role="tab"
+      >
+        ${validation.tab}
+      </button>
+    `
       )
       .join("");
 
     const tabPanels = validations
       .map(
         (validation) => `
-        <div 
-          class="tab-panel"
-          id="${componentId}-panel-${validation.tab}"
-          role="tabpanel"
-          aria-labelledby="${componentId}-tab-${validation.tab}"
-          hidden
-        >
-          <ul class="validation-list">
-            ${parseValidationDetails(validation.detail)}
-          </ul>
-        </div>
-      `
+      <div 
+        class="tab-panel"
+        id="${componentId}-panel-${validation.tab}"
+        role="tabpanel"
+        aria-labelledby="${componentId}-tab-${validation.tab}"
+        hidden
+      >
+        <ul class="validation-list">
+          ${parseValidationDetails(validation.detail)}
+        </ul>
+      </div>
+    `
       )
       .join("");
 
     return `
-      <div class="tabs-container">
-        <div class="tab-buttons" role="tablist">
-          ${tabButtons}
-        </div>
-        <div class="tab-panels">
-          ${tabPanels}
-        </div>
+    <div class="tabs-container">
+      <div class="tab-buttons" role="tablist">
+        ${tabButtons}
       </div>
-    `;
+      <div class="tab-panels">
+        ${tabPanels}
+      </div>
+    </div>
+  `;
   }
 
   function createSubtopicSections() {
@@ -985,21 +1168,25 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
       subtopicSection.setAttribute("tabindex", "0");
 
       subtopicSection.innerHTML = `
-        <div class="card-info">
-          <h2>${item.component_name}</h2>
-          <p>${item.description}</p>
-          ${createTabsHTML(item.validations, item.component_id)}
-        </div>
-        <div class="card-visual">
-          <img 
-            src="${item.logo_url}" 
-            alt="${item.component_name} Icon" 
-            onerror="this.src='placeholder.png'"
-          />
-        </div>
-      `;
+      <div class="card-info">
+        <h2 class="card-header">${item.component_name}</h2>
+        <p class="card-desc">${item.description}</p>
+        ${createTabsHTML(item.validations, item.component_id)}
+      </div>
+      <div class="card-visual">
+        <img 
+          src="${item.logo_url}" 
+          alt="${item.component_name} Icon" 
+          onerror="this.src='placeholder.png'"
+        />
+      </div>
+    `;
 
       subtopicsContainer.appendChild(subtopicSection);
+
+      // Initialize zoom and drag for the image
+      const img = subtopicSection.querySelector(".card-visual img");
+      initializeImageZoomDrag(img);
 
       // Add click handlers for tab buttons
       const tabButtons = subtopicSection.querySelectorAll(".tab-button");
@@ -1066,7 +1253,6 @@ Number of FAQ(Optional):Number of FAQ's to be generated.`,
     filterSubtopics(query);
   });
 
-  //main topic
   // Main Topic Selection
   const mainTopicElements = document.querySelectorAll(".main-topic");
 
