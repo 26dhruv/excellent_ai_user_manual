@@ -909,198 +909,15 @@ Tone (Optional): Specify the desired tone`,
   const subtopicsContainer = document.getElementById("subtopicsContainer");
   const searchInput = document.getElementById("searchInput");
 
-  function initializeImageZoomDrag(imgElement) {
-    let scale = 1;
-    const MAX_SCALE = 3;
-    const MIN_SCALE = 1;
-    const ZOOM_SPEED = 0.02;
-    let lastWheelTime = 0;
-    const WHEEL_TIMEOUT = 50;
-
-    let isDragging = false;
-    let startX,
-      startY,
-      translateX = 0,
-      translateY = 0;
-    let lastX = 0,
-      lastY = 0;
-    let velocityX = 0,
-      velocityY = 0;
-
-    // Initialize image with optimized properties
-    imgElement.style.backfaceVisibility = "hidden";
-    imgElement.style.webkitBackfaceVisibility = "hidden";
-    imgElement.style.willChange = "transform";
-    imgElement.style.transformStyle = "preserve-3d";
-    imgElement.parentElement.style.perspective = "1000px";
-
-    // Throttled wheel event for zoom
-    imgElement.addEventListener(
-      "wheel",
-      (e) => {
-        e.preventDefault();
-
-        const isTouchPad = Math.abs(e.wheelDelta) < 120;
-        const currentTime = Date.now();
-
-        if (currentTime - lastWheelTime < WHEEL_TIMEOUT && !e.ctrlKey) return;
-        lastWheelTime = currentTime;
-
-        let zoomFactor = ZOOM_SPEED;
-        if (e.ctrlKey || isTouchPad) {
-          zoomFactor = ZOOM_SPEED * 0.5;
-        }
-
-        const delta = e.deltaY > 0 ? -1 : 1;
-        let newScale = scale + delta * zoomFactor;
-
-        newScale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, newScale));
-
-        if (newScale !== scale) {
-          scale = newScale;
-
-          const rect = imgElement.getBoundingClientRect();
-          const mouseX = e.clientX - rect.left;
-          const mouseY = e.clientY - rect.top;
-
-          const x = (mouseX - translateX) * (1 - scale);
-          const y = (mouseY - translateY) * (1 - scale);
-
-          requestAnimationFrame(() => {
-            const boundedTranslateX = translateX + x;
-            const boundedTranslateY = translateY + y;
-
-            const maxTranslateX = (rect.width * (scale - 1)) / 2;
-            const maxTranslateY = (rect.height * (scale - 1)) / 2;
-
-            translateX = Math.min(
-              Math.max(boundedTranslateX, -maxTranslateX),
-              maxTranslateX
-            );
-            translateY = Math.min(
-              Math.max(boundedTranslateY, -maxTranslateY),
-              maxTranslateY
-            );
-
-            updateImageTransform(imgElement, scale, translateX, translateY);
-          });
-        }
-      },
-      { passive: false }
-    );
-
-    // Mouse down event for drag start
-    imgElement.addEventListener("mousedown", (e) => {
-      if (scale > 1) {
-        isDragging = true;
-        imgElement.parentElement.classList.add("dragging");
-        startX = e.clientX - translateX;
-        startY = e.clientY - translateY;
-        lastX = e.clientX;
-        lastY = e.clientY;
-        velocityX = 0;
-        velocityY = 0;
-      }
-    });
-
-    // Mouse move event for dragging
-    document.addEventListener("mousemove", (e) => {
-      if (!isDragging) return;
-
-      velocityX = e.clientX - lastX;
-      velocityY = e.clientY - lastY;
-      lastX = e.clientX;
-      lastY = e.clientY;
-
-      let newTranslateX = e.clientX - startX;
-      let newTranslateY = e.clientY - startY;
-
-      const rect = imgElement.getBoundingClientRect();
-      const containerRect = imgElement.parentElement.getBoundingClientRect();
-
-      const maxX = (rect.width * scale - containerRect.width) / 2;
-      const maxY = (rect.height * scale - containerRect.height) / 2;
-
-      newTranslateX = Math.min(Math.max(newTranslateX, -maxX), maxX);
-      newTranslateY = Math.min(Math.max(newTranslateY, -maxY), maxY);
-
-      translateX = newTranslateX;
-      translateY = newTranslateY;
-
-      requestAnimationFrame(() => {
-        updateImageTransform(imgElement, scale, translateX, translateY);
-      });
-    });
-
-    // Mouse up event for drag end
-    document.addEventListener("mouseup", () => {
-      if (isDragging) {
-        isDragging = false;
-        imgElement.parentElement.classList.remove("dragging");
-
-        // Apply momentum
-        let momentum = () => {
-          if (Math.abs(velocityX) > 0.1 || Math.abs(velocityY) > 0.1) {
-            velocityX *= 0.95;
-            velocityY *= 0.95;
-
-            translateX += velocityX;
-            translateY += velocityY;
-
-            const rect = imgElement.getBoundingClientRect();
-            const containerRect =
-              imgElement.parentElement.getBoundingClientRect();
-
-            const maxX = (rect.width * scale - containerRect.width) / 2;
-            const maxY = (rect.height * scale - containerRect.height) / 2;
-
-            translateX = Math.min(Math.max(translateX, -maxX), maxX);
-            translateY = Math.min(Math.max(translateY, -maxY), maxY);
-
-            requestAnimationFrame(() => {
-              updateImageTransform(imgElement, scale, translateX, translateY);
-              momentum();
-            });
-          }
-        };
-        momentum();
-      }
-    });
-
-    // Mouse out event for reset
-    imgElement.parentElement.addEventListener("mouseout", (e) => {
-      // Only reset if the mouse leaves the container entirely
-      if (
-        !e.relatedTarget ||
-        !imgElement.parentElement.contains(e.relatedTarget)
-      ) {
-        resetImageTransform(imgElement);
-      }
-    });
-  }
-
-  function updateImageTransform(imgElement, scale, translateX, translateY) {
-    imgElement.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) scale3d(${scale}, ${scale}, 1)`;
-  }
-
-  function resetImageTransform(imgElement) {
-    scale = 1;
-    translateX = 0;
-    translateY = 0;
-    requestAnimationFrame(() => {
-      imgElement.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) scale3d(${scale}, ${scale}, 1)`;
-    });
-  }
-
   function parseValidationDetails(detail) {
     return detail
       .split("\n")
       .map((line) => {
         const [boldText, ...regularText] = line.split(":");
         return `<li>
-        <strong>${boldText.trim()}:</strong> 
-        ${regularText.join(":").trim()}
-      </li>`;
+          <strong>${boldText.trim()}:</strong> 
+          ${regularText.join(":").trim()}
+        </li>`;
       })
       .join("");
   }
@@ -1109,47 +926,47 @@ Tone (Optional): Specify the desired tone`,
     const tabButtons = validations
       .map(
         (validation) => `
-      <button 
-        class="tab-button"
-        data-tab="${validation.tab}"
-        aria-selected="false"
-        aria-controls="${componentId}-panel-${validation.tab}"
-        role="tab"
-      >
-        ${validation.tab}
-      </button>
-    `
+        <button 
+          class="tab-button"
+          data-tab="${validation.tab}"
+          aria-selected="false"
+          aria-controls="${componentId}-panel-${validation.tab}"
+          role="tab"
+        >
+          ${validation.tab}
+        </button>
+      `
       )
       .join("");
 
     const tabPanels = validations
       .map(
         (validation) => `
-      <div 
-        class="tab-panel"
-        id="${componentId}-panel-${validation.tab}"
-        role="tabpanel"
-        aria-labelledby="${componentId}-tab-${validation.tab}"
-        hidden
-      >
-        <ul class="validation-list">
-          ${parseValidationDetails(validation.detail)}
-        </ul>
-      </div>
-    `
+        <div 
+          class="tab-panel"
+          id="${componentId}-panel-${validation.tab}"
+          role="tabpanel"
+          aria-labelledby="${componentId}-tab-${validation.tab}"
+          hidden
+        >
+          <ul class="validation-list">
+            ${parseValidationDetails(validation.detail)}
+          </ul>
+        </div>
+      `
       )
       .join("");
 
     return `
-    <div class="tabs-container">
-      <div class="tab-buttons" role="tablist">
-        ${tabButtons}
+      <div class="tabs-container">
+        <div class="tab-buttons" role="tablist">
+          ${tabButtons}
+        </div>
+        <div class="tab-panels">
+          ${tabPanels}
+        </div>
       </div>
-      <div class="tab-panels">
-        ${tabPanels}
-      </div>
-    </div>
-  `;
+    `;
   }
 
   function createSubtopicSections() {
@@ -1168,25 +985,21 @@ Tone (Optional): Specify the desired tone`,
       subtopicSection.setAttribute("tabindex", "0");
 
       subtopicSection.innerHTML = `
-      <div class="card-info">
-        <h2 class="card-header">${item.component_name}</h2>
-        <p class="card-desc">${item.description}</p>
-        ${createTabsHTML(item.validations, item.component_id)}
-      </div>
-      <div class="card-visual">
-        <img 
-          src="${item.logo_url}" 
-          alt="${item.component_name} Icon" 
-          onerror="this.src='placeholder.png'"
-        />
-      </div>
-    `;
+        <div class="card-info">
+          <h2>${item.component_name}</h2>
+          <p>${item.description}</p>
+          ${createTabsHTML(item.validations, item.component_id)}
+        </div>
+        <div class="card-visual">
+          <img 
+            src="${item.logo_url}" 
+            alt="${item.component_name} Icon" 
+            onerror="this.src='placeholder.png'"
+          />
+        </div>
+      `;
 
       subtopicsContainer.appendChild(subtopicSection);
-
-      // Initialize zoom and drag for the image
-      const img = subtopicSection.querySelector(".card-visual img");
-      initializeImageZoomDrag(img);
 
       // Add click handlers for tab buttons
       const tabButtons = subtopicSection.querySelectorAll(".tab-button");
@@ -1253,6 +1066,7 @@ Tone (Optional): Specify the desired tone`,
     filterSubtopics(query);
   });
 
+  //main topic
   // Main Topic Selection
   const mainTopicElements = document.querySelectorAll(".main-topic");
 
