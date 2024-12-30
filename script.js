@@ -987,7 +987,7 @@ Tone (Optional): Specify the desired tone`,
       subtopicSection.innerHTML = `
         <div class="card-info">
           <h2>${item.component_name}</h2>
-          <p>${item.description}</p>
+          <p class="card-desc">${item.description}</p>
           ${createTabsHTML(item.validations, item.component_id)}
         </div>
         <div class="card-visual">

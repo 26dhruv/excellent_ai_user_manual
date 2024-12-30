@@ -12,6 +12,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
 
 body {
   font-family: "Inter", sans-serif;
