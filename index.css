@@ -14,8 +14,7 @@
 }
 /* For WebKit browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 25px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -258,22 +257,32 @@ nav {
 .card-visual {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
   perspective: 1000px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-visual:hover {
+  transform: scale(1.03);
 }
 
 .card-visual img {
   width: 100%;
-  height: auto;
-  transform-origin: center;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  will-change: transform;
-  transform-style: preserve-3d;
-  user-select: none;
-  -webkit-user-drag: none;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid var(--secondary-color);
+
+  padding: 2px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card-visual:hover img {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.02);
 }
 
 .dragging {
@@ -477,7 +486,7 @@ footer {
   }
 
   .tab-buttons {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .tab-button {

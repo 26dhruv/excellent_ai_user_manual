@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
           tab: "7P's marketing mix",
           detail:
             "Any Reference Brands(Optional):sed for giving reference brands to AI for better results.\nInclude Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!",
+          tab_image_url: "images/7ps.png",
         },
       ],
-      logo_url: "images/7ps.png",
     },
     1: {
       section: "perfomance_marketing",
@@ -31,9 +31,9 @@ Brand/Store Name(Optional):Used to define Brand/Store Name so AI can give Brand/
 Incentives(OPtional):Incentives you would like the AI to add like any discounts, free shipping, or special promotions to encourage purchase completion.
 Preferred Communication Channels(Optional):It is used to instruct AI to give content according to preferred way communication like email,sms,push notifications etc.
 Keywords(Optionla):Keywords are used for suggesting and improving SEO or product focus.`,
+          tab_image_url: "images/abondoned_cart.png",
         },
       ],
-      logo_url: "images/abondoned_cart.png",
     },
     2: {
       section: "perfomance_marketing",
@@ -43,7 +43,19 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
         "The AD Creator is a versatile tool that simplifies ad design, customization, and deployment across platforms, combining user-friendly interfaces, advanced targeting, and powerful analytics to maximize engagement and achieve marketing goals.\n",
       validations: [
         {
-          tab: "Google Ad Creator/Facebook Ad Creator",
+          tab: "Google Ad Creator",
+          detail: `Tabs:User can toggle between Google and Facebook specific Ad Creator.
+      Target Audience(Optional):Helps AI define the Target Audience /People for better understanding.
+      Key Message/Key Words:What are you promoting and why should people care? i.e. the core message that will resonate with your audience
+      Ad Extensions(Optional):It helps user add extra information like sitelinks,callbuttons etc to add more context.
+      Visual Cues(Optional):It defines visual aspect of the Ad eg theme ,images, or key display element to attract elements.
+      Additional Details(Optional):Enter any specific or extra information related to the Ad.
+      Tone(Optional):Defines Tone of the output AI generates.
+      Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/ad_creator.png",
+        },
+        {
+          tab: "Facebook Ad Creator",
           detail: `Tabs:User can toggle between Google and Facebook specific Ad Creator.
       Target Audience(Optional):Helps AI define the Target Audience /People for better understanding.
       Ad Extensions(Optional):It helps user add extra information like sitelinks,callbuttons etc to add more context.
@@ -51,9 +63,9 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
       Additional Details(Optional):Enter any specific or extra information related to the Ad.
       Tone(Optional):Defines Tone of the output AI generates.
       Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/facebook_ad_creator.png.png",
         },
       ],
-      logo_url: "images/ad_creator.png",
     },
     3: {
       section: "copywriting",
@@ -69,14 +81,15 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
 					Max Word Count(Optional): User can set a maximum word count for the article.
 					Specific Brief: User can provide a detailed brief or key points to focus on for the article.
 					Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/article_writing.png",
         },
         {
           tab: "Article Outline Writer",
           detail:
             "Article Template(Optional):Briefly describe the topic or main idea of the article.\nArticle Template(Optional):Select from given templates.\nInclude Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!",
+          tab_image_url: "images/article_outline_writer.png",
         },
       ],
-      logo_url: "images/article_writing.png",
     },
     4: {
       section: "branding",
@@ -89,9 +102,9 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
         {
           tab: "Audience, tone of voice, personality, colour palettes & font options",
           detail: `Brand Brief (Optional): User can summarize the brand, including its mission, values, and key messaging.`,
+          tab_image_url: "images/audience_tone.png",
         },
       ],
-      logo_url: "images/audience_tone.png",
     },
     5: {
       section: "copywriting",
@@ -107,9 +120,9 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
                    List of Keywords (Optional): User can provide additional SEO keywords for inclusion.
                    Keyword Density of Main Keyword (Percentage) (Optional): User can set the desired percentage for the keyword density.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/blog_writer.png",
         },
       ],
-      logo_url: "images/blog_writer.png",
     },
     6: {
       section: "copywriting",
@@ -124,9 +137,9 @@ Keywords(Optionla):Keywords are used for suggesting and improving SEO or product
                    Page Count (Optional): Specify the desired number of pages for the brochure.
                    Preliminary Content Structure (Optional): Outline brochure sections.
                    Distribution Channel (Optional): Specify where and how the brochure will be distributed (e.g., online, printed, at events).`,
+          tab_image_url: "images/brochure.png",
         },
       ],
-      logo_url: "images/brochure.png",
     },
     7: {
       section: "socialmedia",
@@ -143,9 +156,9 @@ Marketing Channels (Optional): Select from given options (e.g., social media, em
 Industry Landscape (Optional): What industry are you in, and what does the competitive landscape look like? Identify key competitors, emerging industry trends, and shifts in consumer behaviour or technological advancements relevant to your market.
 Tone (Optional): Specify the tone (e.g., professional, conversational, formal).
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/buyers_journey.png",
         },
       ],
-      logo_url: "images/buyers_journey.png",
     },
     8: {
       section: "essential",
@@ -156,8 +169,18 @@ Include Competitors Data:Use it for better AI response,you can add upto 3 compet
       validations: [
         {
           tab: "Budget Planning",
-          detail:
-            "Campaign Name (Optional): A unique name for the campaign to easily track and manage its progress.\nHook Words(Optional):The catchy word or slogan that captures attention.\nGoals:Enter specific objectives or outcomes the campaign intends to achieve.Target Audience(Optional):Enter who is your audience?i.e demographics,preferences etc.\nMarket Research and Information(Optional):Enter things like customer trends , key insights, etc.\nTactics(Optional):Strategies or actions planned to engage the audience and drive campaign success.\nSales Channel:Channels through which the product service will be sold (select from given options).\nMetrics:Enter key perfomance indicators to track the campaign success.\nTotal Budget(Optional):Enter total amount allocated to the campaign execution.\nCampaign Duration-Start Date(Optional):Start of the campaign.\nCampaign Duration-End Date(Optional):Enter end of the Campaign.\nTone (Optional): Desired communication style (e.g., professional, conversational) to maintain consistency across the campaign.\nInclude Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!",
+          detail: `Campaign Name (Optional): A unique name for the campaign to easily track and manage its progress.
+          Hook Words(Optional):The catchy word or slogan that captures attention.
+          Goals:Enter specific objectives or outcomes the campaign intends to achieve.Target Audience(Optional):Enter who is your audience?i.e demographics,preferences etc.
+          Market Research and Information(Optional):Enter things like customer trends , key insights, etc.
+          Tactics(Optional):Strategies or actions planned to engage the audience and drive campaign success.
+          Sales Channel:Channels through which the product service will be sold (select from given options).
+          Metrics:Enter key perfomance indicators to track the campaign success.
+          Total Budget(Optional):Enter total amount allocated to the campaign execution.
+          Campaign Duration-Start Date(Optional):Start of the campaign.
+          Campaign Duration-End Date(Optional):Enter end of the Campaign.
+          Tone (Optional): Desired communication style (e.g., professional, conversational) to maintain consistency across the campaign.\nInclude Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/budget_planning.png",
         },
         {
           tab: "Campaign Strategy",
@@ -173,9 +196,9 @@ Campaign Timeline-Start Date (Optional): dd/mm/yyyy, specifying the start date o
 Campaign Timeline-End Date (Optional): dd/mm/yyyy, specifying the end date of the campaign.
 Tone (Optional): Desired communication style (e.g., professional, conversational) to maintain consistency across the campaign.
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/campaign_strat.png",
         },
       ],
-      logo_url: "images/campaign_strat.png",
     },
     9: {
       section: "customeroutreach",
@@ -198,6 +221,7 @@ Any Current Promotions or Offers (Optional): Mention any ongoing promotions or e
 Website or Landing Page URL (Optional): Include a link to the business website or a dedicated landing page.
 Social Proof (Optional): Include reviews, or case studies as social proof to build trust.
 Additional Information (Optional): Provide any other relevant details or customization for the cold marketing message.`,
+          tab_image_url: "images/cold_wp_marketing.png",
         },
         {
           tab: "Cold Email Client",
@@ -213,9 +237,9 @@ Any Current Promotions or Offers (Optional): Mention any ongoing promotions or e
 Website or Landing Page URL (Optional): Include a link to the business website or a dedicated landing page.
 Social Proof (Optional): Include reviews, or case studies as social proof to build trust.
 Desired Email Length (Optional): Indicate the preferred length of the email (e.g. short, medium, detailed).`,
+          tab_image_url: "images/cold_email_marketing.png",
         },
       ],
-      logo_url: "images/cold_marketing.png",
     },
     10: {
       section: "copywriting",
@@ -230,19 +254,21 @@ Desired Email Length (Optional): Indicate the preferred length of the email (e.g
 Text Content: Enter the text you want to improve.
 Tone of Voice (Optional): Enter the desired tone, such as professional, casual, formal, etc.
 Content Complexity (Optional): Specify the desired complexity level of the content (e.g., simple, intermediate, advanced).`,
+          tab_image_url: "images/content_tone_improver.png",
         },
         {
           tab: "Article Improver Client",
           detail: `Article to Improve: Enter the specific article or section you wish to improve.
 Additional Instructions (Optional): Provide any extra details or specific areas to focus on during the improvement process.`,
+          tab_image_url: "images/article_improver_client.png",
         },
         {
           tab: "Humantext Rewriter Client",
           detail: `Human Written Text: Enter text that has been manually written for improvement.
 Brand Name to Replace with (Optional): If applicable, enter a brand name to replace with a different name or keyword.`,
+          tab_image_url: "images/humantext_rewriter_client.png",
         },
       ],
-      logo_url: "images/content_improver.png",
     },
     11: {
       section: "branding",
@@ -258,9 +284,9 @@ Language (Optional): Enter the preferred language for the video content.
 Video Duration (In seconds) (Optional): Specify the desired duration of the video in seconds.
 Tone (Optional): Enter the tone of the video, such as professional, casual, motivational, etc.
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/corporate_video_generator.png",
         },
       ],
-      logo_url: "images/corporate_video_generator.png",
     },
     12: {
       section: "customeroutreach",
@@ -284,9 +310,9 @@ Desired Improvements for Feedback Collection (Optional): Suggest ways to enhance
 Budget for Engagement Initiatives (Optional): Specify the budget allocated for engagement-related activities.
 Specific Competitor Strategies to Emulate or Avoid (Optional): Mention any competitor strategies that should be considered or avoided for better engagement outcomes.
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/customer_engagment_techniques.png",
         },
       ],
-      logo_url: "images/customer_engagment_techniques.png",
     },
     13: {
       section: "perfomance_marketing",
@@ -307,9 +333,9 @@ Keywords (Optional): Include relevant keywords for SEO purposes.
 Additional Information (Promotions, Discounts, etc.) (Optional): Provide additional details like promotions, discounts, or special offers.
 Tone (Optional): Specify the desired tone for the product description, such as professional, casual, informative, etc.
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/ecommerce_product_desc.png",
         },
       ],
-      logo_url: "images/ecommerce_product_desc.png",
     },
     14: {
       section: "branding",
@@ -326,9 +352,9 @@ Brand Voice (Optional): Describe the tone and style of communication used by you
 Key Benefits (at least 3): List at least three key benefits that highlight your brand’s value.
 Unique Selling Point (USP) (Optional): Provide the unique selling point that sets your brand apart from competitors.
 Target Audience (Optional): Specify the target audience, including demographics, interests, and needs.`,
+          tab_image_url: "images/elevator_pitch.png",
         },
       ],
-      logo_url: "images/elevator_pitch.png",
     },
     15: {
       section: "socialmedia",
@@ -340,9 +366,9 @@ Target Audience (Optional): Specify the target audience, including demographics,
         {
           tab: "Festival post generator",
           detail: `Festival Name: Enter the name of the festival for which the post is being generated.`,
+          tab_image_url: "images/festival.png",
         },
       ],
-      logo_url: "images/festival.png",
     },
     16: {
       section: "google",
@@ -355,9 +381,9 @@ Target Audience (Optional): Specify the target audience, including demographics,
           tab: "Fifty business update generator",
           detail: `Keywords: Enter relevant business update keywords.
 	  Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/50_business.png",
         },
       ],
-      logo_url: "images/50_business.png",
     },
     17: {
       section: "copywriting",
@@ -376,9 +402,10 @@ Call to Action (Optional): Enter a call-to-action for the copy.
 Word Count (Optional): Specify the desired word count for the content.
 Key Points (Optional): Include key points or focus areas for the copy.
 Content Complexity: Choose the complexity level from Expert, Medium, or Easy.`,
+
+          tab_image_url: "images/framework_based_copywriting.png",
         },
       ],
-      logo_url: "images/framework_based_copywriting.png",
     },
     18: {
       section: "customeroutreach",
@@ -403,6 +430,7 @@ Next Purchase Discount Code (for loyalty stage if applicable) (Optional): Enter 
 Follow-up Time Frame (Optional): Enter the follow-up time frame.
 Feedback or Survey Link (if available) (Optional): Enter a link for feedback or survey if available.
 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/wp_funnel.png",
         },
         {
           tab: "LinkedIn Connection Funnel",
@@ -414,6 +442,7 @@ Common Interests or Mutual Connections (Optional): Enter common interests or mut
 Value Proposition (Optional): Enter the value proposition.
 Recent Achievements or Projects (optional) (Optional): Enter recent achievements or projects.
 Follow-up Intent (Optional): Enter the follow-up intent.`,
+          tab_image_url: "images/linkedin_funnel.png",
         },
         {
           tab: "Email Funnel",
@@ -425,11 +454,10 @@ Unique Selling Proposition (USP) (Optional): Enter the USP.
 Email Service Provider Capabilities (if specified) (Optional): Enter email service provider capabilities if specified.
 Desired Funnel Length (number of emails) (Optional): Enter the desired length of the email funnel (number of emails).
 Timing Between Emails (if specified) (Optional): Enter timing between emails if specified.
-Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!
-`,
+Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/funnel_agent.png",
         },
       ],
-      logo_url: "images/funnel_agent.png",
     },
     19: {
       section: "google",
@@ -450,9 +478,9 @@ Number of Reviews (Optional):Enter how many reviews you have.
 Respond to Reviews?: Do you respond to reviews? (yes/no).
 Goals:What's your main goal with Google My Business? (e.g., increase visits, improve reputation).
 Tone (Optional): Specify the desired tone`,
+          tab_image_url: "images/google_business_optimiser.png",
         },
       ],
-      logo_url: "images/google_business_optimiser.png",
     },
     20: {
       section: "google",
@@ -465,9 +493,9 @@ Tone (Optional): Specify the desired tone`,
           tab: "Google FAQs and answer writer",
           detail: `Idea of Product or Service:Briefly describe the product or service concept.
                    Number of FAQ(Optional):Number of FAQ's to be generated.`,
+          tab_image_url: "images/google_faq.png",
         },
       ],
-      logo_url: "images/google_faq.png",
     },
     21: {
       section: "google",
@@ -479,9 +507,9 @@ Tone (Optional): Specify the desired tone`,
         {
           tab: "Google review response writer",
           detail: `Google Review:Paste the cutomer review to respond to.`,
+          tab_image_url: "images/google_review_response.png",
         },
       ],
-      logo_url: "images/google_review_response.png",
     },
     22: {
       section: "google",
@@ -493,9 +521,9 @@ Tone (Optional): Specify the desired tone`,
         {
           tab: "Google review writing",
           detail: `List of Target Audiences:Specify demographics or groups targeted.`,
+          tab_image_url: "images/google_review_writing.png",
         },
       ],
-      logo_url: "images/google_review_writing.png",
     },
     23: {
       section: "google",
@@ -510,9 +538,9 @@ Tone (Optional): Specify the desired tone`,
                         Business Category:Enter business category.
                         Business City Name:Enter Business city name.
                         Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/google_search_keyword.png",
         },
       ],
-      logo_url: "images/google_search_keyword.png",
     },
     24: {
       section: "google",
@@ -525,9 +553,9 @@ Tone (Optional): Specify the desired tone`,
           tab: "Google service product description",
           detail: `Brand, Product or Service Name:Briefly describe product or service.
                    Keywords(Optional):Keyworkds for the porduct description.`,
+          tab_image_url: "images/google_service_product_description.png",
         },
       ],
-      logo_url: "images/google_service_product_description.png",
     },
     25: {
       section: "customeroutreach",
@@ -543,9 +571,9 @@ Tone (Optional): Specify the desired tone`,
                    Current Marketing Channel: Select the primary marketing channel currently in use.
                    Target Audience(Optional):Define the audience to align strategies with their preferences.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/growth_hacking.png",
         },
       ],
-      logo_url: "images/growth_hacking.png",
     },
     26: {
       section: "essential",
@@ -557,9 +585,9 @@ Tone (Optional): Specify the desired tone`,
         {
           tab: "Image caption",
           detail: `Image upload(Optional):Upload a image of your choice.`,
+          tab_image_url: "images/image_caption.png",
         },
       ],
-      logo_url: "images/image_caption.png",
     },
     27: {
       section: "customeroutreach",
@@ -576,9 +604,9 @@ Tone (Optional): Specify the desired tone`,
                    Specific Challenges in Direct Sales(Optional): Key obstacles faced.
                    Target Audience(Optional): Intended customer demographic.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/inexpensive_direct_sales.png",
         },
       ],
-      logo_url: "images/inexpensive_direct_sales.png",
     },
     28: {
       section: "customeroutreach",
@@ -595,9 +623,9 @@ Tone (Optional): Specify the desired tone`,
                    Specific Technologies/Trends: Indicate technologies or trends to leverage in solutions.
                    Budget and Resources(Optional):Outline available resources to guide practical recommendations.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/innovative_idea.png",
         },
       ],
-      logo_url: "images/innovative_idea.png",
     },
     29: {
       section: "linkedin",
@@ -610,9 +638,9 @@ Tone (Optional): Specify the desired tone`,
           tab: "Linkedin commenting tool",
           detail: `Post Content(Optional):Provide the content of the post you want to comment on for context.
                    Tone(Optional):Specify the tone for your comment, such as professional, friendly, or insightful.`,
+          tab_image_url: "images/linkedin_commenting_tool.png",
         },
       ],
-      logo_url: "images/linkedin_commenting_tool.png",
     },
     30: {
       section: "linkedin",
@@ -630,9 +658,9 @@ Tone (Optional): Specify the desired tone`,
                    Additional Information (Achievement Perspective)(Optional): Share notable accomplishments or perspectives to include.
                    Tone(Optional):Specify the desired tone, such as formal, inspirational, or conversational.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/linkedin_posts.png",
         },
       ],
-      logo_url: "images/linkedin_posts.png",
     },
     31: {
       section: "linkedin",
@@ -644,9 +672,9 @@ Tone (Optional): Specify the desired tone`,
         {
           tab: "LinkedIn skill assessment tool",
           detail: `Assessment Image: Upload the image of the LinkedIn skill assessment for processing.`,
+          tab_image_url: "images/linkedin_skill_assessment.png",
         },
       ],
-      logo_url: "images/linkedin_skill_assessment.png",
     },
     32: {
       section: "linkedin",
@@ -659,11 +687,11 @@ Tone (Optional): Specify the desired tone`,
           tab: "LinkedIn's top voice helper",
           detail: `Question: Provide the main question or topic to address.
                    Subpoints(Optional):Include key details or aspects to cover in the content.
-                   Writing Style(Optional):Specify the desired style, such as persuasive, concise, or detailed.
+                   Writing Style(Optional):Specify/select the desired style
                    Tone(Optional):Indicate the tone, like professional, inspirational, or conversational.`,
+          tab_image_url: "images/linkedin_topvoice.png",
         },
       ],
-      logo_url: "images/linkedin_topvoice.png",
     },
     33: {
       section: "copywriting",
@@ -679,9 +707,9 @@ Tone (Optional): Specify the desired tone`,
                 Benefit to the Customer(Optional):Highlight the key advantage or value the brand offers.
                 Reason Why the Brand Will Deliver on This Promise(Optional):Provide supporting evidence or rationale for the brand's reliability.
                 Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/positioning.png",
         },
       ],
-      logo_url: "images/positioning.png",
     },
     34: {
       section: "essential",
@@ -700,9 +728,9 @@ Tone (Optional): Specify the desired tone`,
                    Campaign Duration - End Date(Optional):Provide the end date for the campaign.
                    Tone(Optional) :Indicate the desired tone for the campaign's messaging.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/ppc_helper.png",
         },
       ],
-      logo_url: "images/ppc_helper.png",
     },
     35: {
       section: "customeroutreach",
@@ -717,9 +745,9 @@ Tone (Optional): Specify the desired tone`,
                    Key Points(Optional):Highlight important points to be included in the answer.
                    Tone of Voice(Optional):Indicate the desired tone, such as informative, conversational, or persuasive.
                    Additional Info(Optional):Provide any extra details or context to enhance the answer.`,
+          tab_image_url: "images/quora_answer.png",
         },
       ],
-      logo_url: "images/quora_answer.png",
     },
     36: {
       section: "copywriting",
@@ -734,9 +762,9 @@ Tone (Optional): Specify the desired tone`,
                    Key Message(Optional) :Highlight the primary message or benefit to focus on.
                    Language: Specify the desired language for the punchline.
                    Tone(Optional):Indicate the tone, such as persuasive, playful, or professional.`,
+          tab_image_url: "images/sales_punchline.png",
         },
       ],
-      logo_url: "images/sales_punchline.png",
     },
     37: {
       section: "socialmedia",
@@ -758,6 +786,7 @@ Tone (Optional): Specify the desired tone`,
                   Timeline - End Date(Optional):Indicate when the content creation ends.
                   Tone (Optional):Define the tone, such as playful, professional, or inspiring.
                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/monthly_insta_reel.png",
         },
         {
           tab: "Monthly Insta story",
@@ -772,6 +801,7 @@ Tone (Optional): Specify the desired tone`,
                    Timeline - End Date(Optional):Indicate when the Stories creation ends.
                    Tone(Optional):Define the tone, such as playful, professional, or engaging.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/monthly_insta_story.png",
         },
         {
           tab: "Instagram reel",
@@ -783,6 +813,7 @@ Tone (Optional): Specify the desired tone`,
                    Additional Information: (Optional) Provide extra context or details for customization.
                    Tone: (Optional) Specify the desired tone, such as fun, educational, or professional.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/insta_reel.png",
         },
         {
           tab: "Instagram Post",
@@ -794,6 +825,7 @@ Tone (Optional): Specify the desired tone`,
                    Additional Information(Optional) : Provide extra context or details for customization.
                    Tone(Optional):Specify the desired tone, such as professional, casual, or engaging.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/insta_post.png",
         },
         {
           tab: "Monthly insta post",
@@ -808,9 +840,9 @@ Tone (Optional): Specify the desired tone`,
                   Timeline - End Date(Optional):Indicate when the content creation ends.
                   Tone(Optional):Specify the desired tone, such as professional, casual, or engaging.
                   Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/monthly_insta_post.png",
         },
       ],
-      logo_url: "images/social_media_posts.png",
     },
     38: {
       section: "essential",
@@ -822,6 +854,7 @@ Tone (Optional): Specify the desired tone`,
         {
           tab: "Prompt Generator",
           detail: `Image Import: (Optional) Upload or import images to generate enhanced visuals.`,
+          tab_image_url: "images/stock_image.png",
         },
         {
           tab: "Stock Images",
@@ -832,9 +865,9 @@ Tone (Optional): Specify the desired tone`,
                   Environment: (Optional) Describe the setting or background for the image.
                   Mood/Tone: (Optional) Specify the mood or emotional tone of the image.
                   Additional Details: (Optional) Provide extra context or elements for customization.`,
+          tab_image_url: "images/stock_images.png",
         },
       ],
-      logo_url: "images/stock_image.png",
     },
     39: {
       color: "copywriting",
@@ -846,9 +879,9 @@ Tone (Optional): Specify the desired tone`,
         {
           tab: "Swot analysis",
           detail: `Competitors Website Link: (Optional) Provide a link to competitors' websites for reference in SWOT analysis.`,
+          tab_image_url: "images/swot_analysis.png",
         },
       ],
-      logo_url: "images/swot_analysis.png",
     },
     40: {
       color: "socialmedia",
@@ -866,9 +899,9 @@ Tone (Optional): Specify the desired tone`,
                    Tone(Optional):Indicate the desired tone, such as playful, professional, or educational.
                    Target Audience(Optional):Define the audience to ensure tailored content strategy.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/viral_content_strat.png",
         },
       ],
-      logo_url: "images/viral_content_strat.png",
     },
     41: {
       color: "copywriting",
@@ -883,9 +916,9 @@ Tone (Optional): Specify the desired tone`,
                    Tone(Optional):Indicate the desired tone, such as formal, conversational, or persuasive.
                    Brief for the Page(Optional):Provide a brief description or key points for the page content.
                    Include Competitors Data:Use it for better AI response,you can add upto 3 competitors in brand profile and note it takes more credits!`,
+          tab_image_url: "images/website_content_writer.png",
         },
       ],
-      logo_url: "images/website_content_writer.png",
     },
     42: {
       color: "copywriting",
@@ -900,200 +933,389 @@ Tone (Optional): Specify the desired tone`,
                    Desired Length(Optional):Indicate the preferred length of the content.
                    Specific Instructions(Optional):Include any specific instructions or guidelines for the content.
                    Tone(Optional):Specify the desired tone, such as professional, casual, or detailed.`,
+          tab_image_url: "images/write_like_me.png",
         },
       ],
-      logo_url: "images/write_like_me.png",
     },
   };
+  window.onload = function () {
+    const hash = window.location.hash;
+    if (hash) {
+      let result = hash.replace("#", "");
 
-  const subtopicsContainer = document.getElementById("subtopicsContainer");
-  const searchInput = document.getElementById("searchInput");
+      // Filter the data to get the info that matches the component_id from the hash
+      let info = Object.values(data).filter(
+        (item) => item.component_id == result
+      );
+      if (info.length === 0) {
+        window.location.href = window.location.href.split("#")[0];
+        return;
+      }
+      const header = document.querySelector("header");
 
-  function parseValidationDetails(detail) {
-    return detail
-      .split("\n")
-      .map((line) => {
-        const [boldText, ...regularText] = line.split(":");
-        return `<li>
-          <strong>${boldText.trim()}:</strong> 
-          ${regularText.join(":").trim()}
-        </li>`;
-      })
-      .join("");
-  }
+      header.remove();
 
-  function createTabsHTML(validations, componentId) {
-    const tabButtons = validations
-      .map(
-        (validation) => `
-        <button 
-          class="tab-button"
-          data-tab="${validation.tab}"
-          aria-selected="false"
-          aria-controls="${componentId}-panel-${validation.tab}"
-          role="tab"
-        >
-          ${validation.tab}
-        </button>
-      `
-      )
-      .join("");
+      const subtopicsContainer = document.getElementById("subtopicsContainer");
 
-    const tabPanels = validations
-      .map(
-        (validation) => `
-        <div 
-          class="tab-panel"
-          id="${componentId}-panel-${validation.tab}"
-          role="tabpanel"
-          aria-labelledby="${componentId}-tab-${validation.tab}"
-          hidden
-        >
-          <ul class="validation-list">
-            ${parseValidationDetails(validation.detail)}
-          </ul>
-        </div>
-      `
-      )
-      .join("");
+      // Function to parse the validation details into a list format
+      function parseValidationDetails(detail) {
+        return detail
+          .split("\n")
+          .map((line) => {
+            const [boldText, ...regularText] = line.split(":");
+            return `<li>
+              <strong>${boldText.trim()}:</strong> 
+              ${regularText.join(":").trim()}
+            </li>`;
+          })
+          .join("");
+      }
 
-    return `
-      <div class="tabs-container">
-        <div class="tab-buttons" role="tablist">
-          ${tabButtons}
-        </div>
-        <div class="tab-panels">
-          ${tabPanels}
-        </div>
+      // Function to create the HTML for the tabs and panels
+      function createTabsHTML(validations, componentId) {
+        const tabButtons = validations
+          .map(
+            (validation) => `
+            <button 
+              class="tab-button"
+              data-tab="${validation.tab}"
+              aria-selected="false"
+              aria-controls="${componentId}-panel-${validation.tab}"
+              role="tab"
+            >
+              ${validation.tab}
+            </button>
+          `
+          )
+          .join("");
+
+        const tabPanels = validations
+          .map(
+            (validation) => `
+            <div 
+              class="tab-panel"
+              id="${componentId}-panel-${validation.tab}"
+              role="tabpanel"
+              aria-labelledby="${componentId}-tab-${validation.tab}"
+              hidden
+            >
+              <ul class="validation-list">
+                ${parseValidationDetails(validation.detail)}
+              </ul>
+            </div>
+          `
+          )
+          .join("");
+
+        return `
+          <div class="tabs-container">
+            <div class="tab-buttons" role="tablist">
+              ${tabButtons}
+            </div>
+            <div class="tab-panels">
+              ${tabPanels}
+            </div>
+          </div>
+        `;
+      }
+
+      // Function to create subtopic sections from the filtered info
+      function createSubtopicSections() {
+        subtopicsContainer.innerHTML = "";
+
+        info.forEach((item) => {
+          const subtopicSection = document.createElement("section");
+          subtopicSection.classList.add(
+            "subtopic-card",
+            `${item.section}-subtopics`
+          );
+          subtopicSection.setAttribute(
+            "data-title",
+            item.component_name.toLowerCase()
+          );
+          subtopicSection.setAttribute("tabindex", "0");
+
+          // Create the HTML for each subtopic section
+          subtopicSection.innerHTML = `
+            <div class="card-info" id='${item.component_id}'>
+              <h2>${item.component_name}</h2>
+              <p class="card-desc">${item.description}</p>
+              ${createTabsHTML(item.validations, item.component_id)}
+            </div>
+            <div class="card-visual">
+              <img 
+                src="${item.validations[0].tab_image_url}" 
+                alt="${item.component_name} Icon" 
+              />
+            </div>
+          `;
+
+          // Append the subtopic section to the container
+          subtopicsContainer.appendChild(subtopicSection);
+
+          // Add click handlers for tab buttons
+          const tabButtons = subtopicSection.querySelectorAll(".tab-button");
+          tabButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+              tabButtons.forEach((btn) => {
+                btn.classList.remove("active");
+                btn.setAttribute("aria-selected", "false");
+              });
+
+              const panelId = button.getAttribute("aria-controls");
+              subtopicSection
+                .querySelectorAll(".tab-panel")
+                .forEach((panel) => {
+                  panel.hidden = true;
+                  panel.classList.remove("active");
+                });
+
+              button.classList.add("active");
+              button.setAttribute("aria-selected", "true");
+
+              const activePanel = document.getElementById(panelId);
+              activePanel.hidden = false;
+              activePanel.classList.add("active");
+
+              // Change the image for the active tab
+              const activeTab = item.validations.find(
+                (validation) => validation.tab === button.innerText
+              );
+              const imageElement =
+                subtopicSection.querySelector(".card-visual img");
+              imageElement.src = activeTab.tab_image_url;
+              imageElement.alt = `${activeTab.tab} Icon`;
+            });
+          });
+
+          // Show the first tab by default
+          const firstTab = tabButtons[0];
+          firstTab.classList.add("active");
+          firstTab.setAttribute("aria-selected", "true");
+          const firstPanelId = firstTab.getAttribute("aria-controls");
+          document.getElementById(firstPanelId).hidden = false;
+          document.getElementById(firstPanelId).classList.add("active");
+        });
+      }
+
+      // Render the subtopics based on the filtered info
+      createSubtopicSections();
+
+      // Function to filter subtopics based on a query (useful for search)
+      function filterSubtopics(query) {
+        const subtopicCards = document.querySelectorAll(".subtopic-card");
+        subtopicCards.forEach((card) => {
+          const title = card.getAttribute("data-title");
+          card.style.display = title.includes(query.toLowerCase())
+            ? "grid"
+            : "none";
+        });
+      }
+    } else {
+      const subtopicsContainer = document.getElementById("subtopicsContainer");
+      const searchInput = document.getElementById("searchInput");
+
+      function parseValidationDetails(detail) {
+        return detail
+          .split("\n")
+          .map((line) => {
+            const [boldText, ...regularText] = line.split(":");
+            return `<li>
+        <strong>${boldText.trim()}:</strong> 
+        ${regularText.join(":").trim()}
+      </li>`;
+          })
+          .join("");
+      }
+
+      function createTabsHTML(validations, componentId) {
+        const tabButtons = validations
+          .map(
+            (validation) => `
+      <button 
+        class="tab-button"
+        data-tab="${validation.tab}"
+        aria-selected="false"
+        aria-controls="${componentId}-panel-${validation.tab}"
+        role="tab"
+      >
+        ${validation.tab}
+      </button>
+    `
+          )
+          .join("");
+
+        const tabPanels = validations
+          .map(
+            (validation) => `
+      <div 
+        class="tab-panel"
+        id="${componentId}-panel-${validation.tab}"
+        role="tabpanel"
+        aria-labelledby="${componentId}-tab-${validation.tab}"
+        hidden
+      >
+        <ul class="validation-list">
+          ${parseValidationDetails(validation.detail)}
+        </ul>
+      </div>
+    `
+          )
+          .join("");
+
+        return `
+    <div class="tabs-container">
+      <div class="tab-buttons" role="tablist">
+        ${tabButtons}
+      </div>
+      <div class="tab-panels">
+        ${tabPanels}
+      </div>
+    </div>
+  `;
+      }
+
+      function createSubtopicSections() {
+        subtopicsContainer.innerHTML = "";
+
+        Object.values(data).forEach((item) => {
+          const subtopicSection = document.createElement("section");
+          subtopicSection.classList.add(
+            "subtopic-card",
+            `${item.section}-subtopics`
+          );
+          subtopicSection.setAttribute(
+            "data-title",
+            item.component_name.toLowerCase()
+          );
+          subtopicSection.setAttribute("tabindex", "0");
+
+          subtopicSection.innerHTML = `
+      <div class="card-info" id='${item.component_id}'>
+        <h2>${item.component_name}</h2>
+        <p class="card-desc">${item.description}</p>
+        ${createTabsHTML(item.validations, item.component_id)}
+      </div>
+      <div class="card-visual">
+        <img 
+          src="${item.validations[0].tab_image_url}" 
+          alt="${item.component_name} Icon" 
+        />
       </div>
     `;
-  }
 
-  function createSubtopicSections() {
-    subtopicsContainer.innerHTML = "";
+          subtopicsContainer.appendChild(subtopicSection);
 
-    Object.values(data).forEach((item) => {
-      const subtopicSection = document.createElement("section");
-      subtopicSection.classList.add(
-        "subtopic-card",
-        `${item.section}-subtopics`
-      );
-      subtopicSection.setAttribute(
-        "data-title",
-        item.component_name.toLowerCase()
-      );
-      subtopicSection.setAttribute("tabindex", "0");
+          // Add click handlers for tab buttons
+          const tabButtons = subtopicSection.querySelectorAll(".tab-button");
+          tabButtons.forEach((button) => {
+            button.addEventListener("click", (e) => {
+              tabButtons.forEach((btn) => {
+                btn.classList.remove("active");
+                btn.setAttribute("aria-selected", "false");
+              });
 
-      subtopicSection.innerHTML = `
-        <div class="card-info">
-          <h2>${item.component_name}</h2>
-          <p class="card-desc">${item.description}</p>
-          ${createTabsHTML(item.validations, item.component_id)}
-        </div>
-        <div class="card-visual">
-          <img 
-            src="${item.logo_url}" 
-            alt="${item.component_name} Icon" 
-            onerror="this.src='placeholder.png'"
-          />
-        </div>
-      `;
+              const panelId = button.getAttribute("aria-controls");
+              subtopicSection
+                .querySelectorAll(".tab-panel")
+                .forEach((panel) => {
+                  panel.hidden = true;
+                  panel.classList.remove("active");
+                });
 
-      subtopicsContainer.appendChild(subtopicSection);
+              button.classList.add("active");
+              button.setAttribute("aria-selected", "true");
 
-      // Add click handlers for tab buttons
-      const tabButtons = subtopicSection.querySelectorAll(".tab-button");
-      tabButtons.forEach((button) => {
-        button.addEventListener("click", (e) => {
-          tabButtons.forEach((btn) => {
-            btn.classList.remove("active");
-            btn.setAttribute("aria-selected", "false");
+              const activePanel = document.getElementById(panelId);
+              activePanel.hidden = false;
+              activePanel.classList.add("active");
+
+              // Change the image for the active tab
+              const activeTab = item.validations.find(
+                (validation) => validation.tab === button.innerText
+              );
+              const imageElement =
+                subtopicSection.querySelector(".card-visual img");
+              imageElement.src = activeTab.tab_image_url;
+              imageElement.alt = `${activeTab.tab} Icon`;
+            });
           });
 
-          const panelId = button.getAttribute("aria-controls");
-          subtopicSection.querySelectorAll(".tab-panel").forEach((panel) => {
-            panel.hidden = true;
-            panel.classList.remove("active");
+          // Show the first tab by default
+          const firstTab = tabButtons[0];
+          firstTab.classList.add("active");
+          firstTab.setAttribute("aria-selected", "true");
+          const firstPanelId = firstTab.getAttribute("aria-controls");
+          document.getElementById(firstPanelId).hidden = false;
+          document.getElementById(firstPanelId).classList.add("active");
+        });
+      }
+
+      function filterSubtopics(query) {
+        const subtopicCards = document.querySelectorAll(".subtopic-card");
+        subtopicCards.forEach((card) => {
+          const title = card.getAttribute("data-title");
+          card.style.display = title.includes(query.toLowerCase())
+            ? "grid"
+            : "none";
+        });
+      }
+
+      // Mobile Navigation Toggle
+      const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
+      const mainTopics = document.getElementById("mainTopics");
+      const hamburgerIcon = mobileNavToggle.querySelector(".hamburger-icon");
+      const closeIcon = mobileNavToggle.querySelector(".close-icon");
+
+      mobileNavToggle.addEventListener("click", () => {
+        mainTopics.classList.toggle("show");
+        hamburgerIcon.style.display = mainTopics.classList.contains("show")
+          ? "none"
+          : "inline";
+        closeIcon.style.display = mainTopics.classList.contains("show")
+          ? "inline"
+          : "none";
+      });
+
+      // Search Input Event Listener
+      searchInput.addEventListener("input", (e) => {
+        const query = e.target.value;
+        filterSubtopics(query);
+      });
+
+      // Main Topic Selection
+      const mainTopicElements = document.querySelectorAll(".main-topic");
+
+      mainTopicElements.forEach((mainTopic) => {
+        mainTopic.addEventListener("click", () => {
+          // Deselect all main topics
+          mainTopicElements.forEach((topic) =>
+            topic.classList.remove("selected")
+          );
+
+          // Select clicked main topic
+          mainTopic.classList.add("selected");
+
+          // Get the section name from the data attribute
+          const sectionName = mainTopic
+            .getAttribute("data-subtopic")
+            .replace("-subtopics", "");
+
+          // Show/hide subtopic cards based on section
+          const subtopicCards = document.querySelectorAll(".subtopic-card");
+          subtopicCards.forEach((card) => {
+            // Check if the card matches the selected section
+            card.style.display = card.classList.contains(
+              `${sectionName}-subtopics`
+            )
+              ? "grid"
+              : "none";
           });
-
-          button.classList.add("active");
-          button.setAttribute("aria-selected", "true");
-
-          document.getElementById(panelId).hidden = false;
-          document.getElementById(panelId).classList.add("active");
         });
       });
 
-      // Show the first tab by default
-      const firstTab = tabButtons[0];
-      firstTab.classList.add("active");
-      firstTab.setAttribute("aria-selected", "true");
-      const firstPanelId = firstTab.getAttribute("aria-controls");
-      document.getElementById(firstPanelId).hidden = false;
-      document.getElementById(firstPanelId).classList.add("active");
-    });
-  }
-
-  function filterSubtopics(query) {
-    const subtopicCards = document.querySelectorAll(".subtopic-card");
-    subtopicCards.forEach((card) => {
-      const title = card.getAttribute("data-title");
-      card.style.display = title.includes(query.toLowerCase())
-        ? "grid"
-        : "none";
-    });
-  }
-
-  // Mobile Navigation Toggle
-  const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
-  const mainTopics = document.getElementById("mainTopics");
-  const hamburgerIcon = mobileNavToggle.querySelector(".hamburger-icon");
-  const closeIcon = mobileNavToggle.querySelector(".close-icon");
-
-  mobileNavToggle.addEventListener("click", () => {
-    mainTopics.classList.toggle("show");
-    hamburgerIcon.style.display = mainTopics.classList.contains("show")
-      ? "none"
-      : "inline";
-    closeIcon.style.display = mainTopics.classList.contains("show")
-      ? "inline"
-      : "none";
-  });
-
-  // Search Input Event Listener
-  searchInput.addEventListener("input", (e) => {
-    const query = e.target.value;
-    filterSubtopics(query);
-  });
-
-  //main topic
-  // Main Topic Selection
-  const mainTopicElements = document.querySelectorAll(".main-topic");
-
-  mainTopicElements.forEach((mainTopic) => {
-    mainTopic.addEventListener("click", () => {
-      // Deselect all main topics
-      mainTopicElements.forEach((topic) => topic.classList.remove("selected"));
-
-      // Select clicked main topic
-      mainTopic.classList.add("selected");
-
-      // Get the section name from the data attribute
-      const sectionName = mainTopic
-        .getAttribute("data-subtopic")
-        .replace("-subtopics", "");
-
-      // Show/hide subtopic cards based on section
-      const subtopicCards = document.querySelectorAll(".subtopic-card");
-      subtopicCards.forEach((card) => {
-        // Check if the card matches the selected section
-        card.style.display = card.classList.contains(`${sectionName}-subtopics`)
-          ? "grid"
-          : "none";
-      });
-    });
-  });
-
-  // Initial setup
-  createSubtopicSections();
+      // Initial setup
+      createSubtopicSections();
+    }
+  };
 });
